@@ -3,7 +3,7 @@
 <main>
 	<h2>Página não encontrada.</h2>
 	<i class="icon fa fa-bug"></i>
-	<h2><a href="javascript: history.go(-1)">voltar</a></h2>
+	<h2><a href="<?php bloginfo('url'); ?>">voltar</a></h2>
 </main>
 
 <?php get_template_part('aside'); ?>

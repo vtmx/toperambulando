@@ -1,3 +1,10 @@
+// clearfix
+@mixin clear {
+	display: table;
+	clear: both;
+	content: '';
+}
+
 // background-size
 @mixin background-size($val) {
 	-webkit-background-size: $val;

@@ -96,6 +96,7 @@
 								// vars
 								$slider_title = get_sub_field('slider-title');
 								$slider_image = get_sub_field('slider-image');
+								$slider_link = get_sub_field('slider-link');
 								$slider_text = get_sub_field('slider-text');
 
 							?>

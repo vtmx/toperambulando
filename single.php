@@ -9,11 +9,14 @@
 		<header class="post-header">
 			<h2 class="post-title" role="heading" itemprop="name"><?php the_title(); ?></h2>
 			<?php if ( get_field('subtitle') ): ?><h3 class="post-subtitle"><?php the_field('subtitle'); ?></h3><?php endif; ?>
+		</header>
+
+		<div class="post-meta">
 			<span class="post-date" itemprop="datePublished"><i class="fa fa-calendar-o"></i> <?php echo get_the_date('d/m/Y'); ?></span>
 			<span class="post-category"><i class="fa fa-folder-open"></i> Categoria: <span><?php the_category(', '); ?></span></span>
 			<span class="post-reviews" itemprop="interactionCount"><i class="fa fa-comments fa-flip-horizontal"></i><?php comments_number( ('Sem comentário'), ('1 comentário'), ('% comentários') ); ?></span>
 			<span class="hidden author" itemprop="author"><?php the_author(); ?></span>
-		</header>
+		</div>
 
 		<div class="post-content" itemprop="articleBody">
 			<div class="post-slider">
@@ -187,7 +190,7 @@
 				);
 		?>
 
-		<h4>Posts Relacionados</h4>
+		<h3>Posts Relacionados</h3>
 
 		<div class="slide">
 			<?php
@@ -199,8 +202,8 @@
 				<article itemscope itemtype="http://schema.org/Article">
 					<a href="<?php the_permalink(); ?>">
 						<figure><?php the_post_thumbnail('thumbnail', array('class' => 'thumb')); ?></figure>
-						<h3 itemprop="name"><?php the_title(); ?></h3>
-						<?php if ( get_field('subtitle') ): ?><h4><?php the_field('subtitle'); ?></h4><?php endif; ?>
+						<h4 itemprop="name"><?php the_title(); ?></h4>
+						<?php if ( get_field('subtitle') ): ?><h5><?php the_field('subtitle'); ?></h5><?php endif; ?>
 					</a>
 				</article>
 		<?php 

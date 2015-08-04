@@ -16,13 +16,15 @@
 				<a class="post-link" href="<?php the_permalink() ?>" title="<?php the_title(); ?>" itemprop="url">
 					<h2 class="post-title entry-title" role="heading" itemprop="name"><?php the_title(); ?></h2>
 					<?php if ( get_field('subtitle') ): ?><h3 class="post-subtitle"><?php the_field('subtitle'); ?></h3><?php endif; ?>
-				</a>
+				</a>				
+			</header>
 
+			<div class="post-meta">
 				<span class="post-date" itemprop="datePublished"><i class="fa fa-calendar-o"></i> <?php echo get_the_date('d/m/Y'); ?></span>
 				<span class="post-category"><i class="fa fa-folder-open"></i> Categoria: <span itemprop="articleSection"><?php the_category(', '); ?></span></span>
 				<span class="post-reviews" itemprop="interactionCount"><i class="fa fa-comments fa-flip-horizontal"></i> <?php comments_popup_link( ('Sem comentário'), ('1 comentário'), ('% comentários') ); ?></span>
 				<span class="hidden" itemprop="author"><?php the_author(); ?></span>
-			</header>
+			</div>
 
 			<div class="post-summary" itemprop="description">			
 				<?php if ( has_post_thumbnail() ) { ?>
