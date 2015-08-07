@@ -1,9 +1,9 @@
 body {
 	margin: 10px 15px 10px;
 	font: 14px 'source-sans', 'open sans', 'segoe ui', sans-serif !important;
-	background: #1e1914;
+	background: #fff;
 	line-height: 24px !important;
-	color: #fec;
+	color: #555;
 }
 
 body:before, body:after {
@@ -13,32 +13,32 @@ body:before, body:after {
 }
 
 ::-webkit-selection {
-	background: #bf6927;
+	background: #d27b39;
 	color: #fff;
 }
 
 ::-moz-selection{
-	background: #bf6927;
+	background: #d27b39;
 	color: #fff;
 }
 
 ::-o-selection {
-	background: #bf6927;
+	background: #d27b39;
 	color: #fff;
 }
 
 ::selection {
-	background: #bf6927;
+	background: #d27b39;
 	color: #fff;
 }
 
 a {
-	color: #ff6927;
+	color: #d27b39;
 	text-decoration: none;
 }
 
 img {
-	border: 5px solid #44321a !important;
+	border: 4px solid #ddd !important;
 }
 
 .wp-caption-dd {
@@ -68,9 +68,10 @@ blockquote {
 	overflow: hidden;
 	margin:  0 0 20px;
 	padding: 15px;
-	background: #412e1b;
-	border-left: 4px solid #fec;
-	font: italic 16px sans-serif;}
+	background: #ddd;
+	border-left: 4px solid #555;
+	font: italic 16px sans-serif;
+}
 
 blockquote p {
 	margin: 0;

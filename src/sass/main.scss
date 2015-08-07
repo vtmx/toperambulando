@@ -52,7 +52,7 @@ figcaption {
 }
 
 a figcaption {
-	color: #777;
+	color: #fff;
 }
 
 a:active figcaption {
@@ -169,7 +169,7 @@ fieldset {
 input[type='email'], input[type='text'], select, textarea {
 	padding: 5px;
 	background: #fff;
-	@include box-shadow(inset 0 2px 5px rgba(0, 0, 0, .2));
+	@include box-shadow(inset 0 2px 1px rgba(0, 0, 0, .2));
 	border: 2px solid #333;
 	color: #333;
 }
@@ -195,6 +195,7 @@ input[type='email'], input[type='text'] {
 textarea {
 	width: 600px;
 	min-height: 200px;
+	resize: vertical;
 }
 
 //
@@ -718,8 +719,8 @@ main figcaption {
 
 .post-title {
 	margin: 0 0 5px 0;
-	font-size: 36px;
-	line-height: 1;
+	font-size: 30px;
+	line-height: 1.2;
 }
 
 .post-subtitle {
@@ -920,6 +921,7 @@ main figcaption {
 	padding: 5px 10px;
 	background: #2A241C;
 	text-align: center;
+	color: #fff;
 	transition: all .2s;
 }
 
@@ -1091,11 +1093,15 @@ main figcaption {
 	border-right: 3px solid $gray;
 	border-bottom: 3px solid $gray;
 	border-radius: 0 0 10px 10px;
-	background: gray-light;
+	background: gray-dark;
 }
 
 .panel-body h3 {
-	margin: 0 0 20px 0;
+	margin: 40px 0 20px 0;
+}
+
+.panel-body h3:first-child {
+	margin-top: 0;
 }
 
 .panel-body h4, .panel-body h5, .panel-body h6 {
@@ -1120,7 +1126,7 @@ main figcaption {
 	margin: 0;
 	padding: 10px;
 	border-radius: 10px 10px 0 0;
-	background: $gray;
+	background: $gray-dark;
 	color: $white;
 	font: normal 18px source-sans, sans-serif;
 }
@@ -1633,6 +1639,14 @@ aside li ul a:before {
 	content: '\f0da';
 }
 
+aside label {
+	margin-bottom: 10px;
+}
+
+aside input[type="submit"] {
+	margin-right: 0;
+}
+
 aside #lct-widget-post_tag li, aside .social-media li {
 	display: inline-block;
 	margin-right: 10px;
@@ -1671,6 +1685,38 @@ aside .special-destinations a {
 	margin-bottom: 20px;
 }
 
+aside #lct-widget-category {
+	width: 75%;
+	margin-right: 3%;
+}
+
+aside .archives-dropdown-2 {
+	display: none;
+}
+
+// wysija
+
+.wysija-input {
+	width: 100% !important;
+}
+
+.wysija-paragraph, .widget_wysija_cont .wysija-submit {
+	display: inline-block !important;
+}
+
+.wysija-paragraph {
+	width: 69%;
+	margin-right: 3%;
+}
+
+.wysija-msg {
+	margin-bottom: 20px;
+}
+
+.wysija-msg li {
+	margin-bottom: 0;
+}
+
 //
 // =comments
 // --------------------------------------------------
@@ -1678,6 +1724,7 @@ aside .special-destinations a {
 #comments {
 	clear: both;
 	padding: 20px;
+	margin-bottom: 20px;
 	background: #fff;
 }
 
@@ -1700,7 +1747,7 @@ aside .special-destinations a {
 }
 
 #comments .comment-form p {
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 }
 
 #comments .comment-form .form-submit {
@@ -1725,9 +1772,13 @@ aside .special-destinations a {
 
 // comment list
 
-#comments .commentlist, #comments .children, #comments li, #comments footer {
+#comments .children, #comments li, #comments footer {
 	margin: 0;
 	padding: 0;
+}
+
+#comments .commentlist {
+	margin-top: 20px;
 }
 
 #comments footer {
@@ -1740,7 +1791,7 @@ aside .special-destinations a {
 
 #comments .comment-body {
 	padding: 20px 0;
-	border-top: 2px solid #332618;
+	border-top: 2px solid gray-light;
 }
 
 #comments .comment-body:after {
