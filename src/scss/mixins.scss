@@ -1,0 +1,92 @@
+// clearfix
+@mixin clear {
+	display: table;
+	clear: both;
+	content: '';
+}
+
+// background-size
+@mixin background-size($val) {
+	-webkit-background-size: $val;
+	   -moz-background-size: $val;
+	     -o-background-size: $val;
+	        background-size: $val;
+}
+
+// border box
+@mixin border-sizing($val) {
+	-webkit-box-sizing: $val;
+	   -moz-box-sizing: $val;
+	     -o-box-sizing: $val;
+	        box-sizing: $val;
+}
+
+// border radius
+@mixin border-radius($val) {
+	-webkit-border-radius: $val;
+	   -moz-border-radius: $val;
+	     -o-border-radius: $val;
+	        border-radius: $val;	
+}
+
+// box shadow
+@mixin box-shadow($val) {
+	-webkit-box-shadow: $val;
+	   -moz-box-shadow: $val;
+	     -o-box-shadow: $val;
+	        box-shadow: $val;
+}
+
+// opacity
+@mixin opacity($val) {
+    opacity: $val;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=$opacity)";
+	    filter: "alpha(opacity = $opacity)";
+}
+
+// selection
+@mixin selection($val1, $val2) {
+	::-webkit-selection {
+		background: $val1;
+		color: $val2;
+	}
+
+	::-moz-selection{
+		background: $val1;
+		color: $val2;
+	}
+
+	::-o-selection {
+		background: $val1;
+		color: $val2;
+	}
+
+	::selection {
+		background: $val1;
+		color: $val2;
+	}
+}
+
+// text-shadow
+@mixin text-shadow($val) {
+	-webkit-text-shadow: $val;
+	   -moz-text-shadow: $val;
+	     -o-text-shadow: $val;
+	        text-shadow: $val;
+}
+
+// transform
+@mixin transform($val) {
+	-webkit-transform: $val;
+	   -moz-transform: $val;
+	     -o-transform: $val;
+	        transform: $val;
+}
+
+// transition
+@mixin transition($val) {
+	-webkit-transition: $val;
+	   -moz-transition: $val;
+	     -o-transition: $val;
+	        transition: $val;
+}
