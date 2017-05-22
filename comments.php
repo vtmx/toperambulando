@@ -1,4 +1,9 @@
-<?php comment_form(); ?>
+<?php 
+    comment_form(array(
+		'comment_notes_after'=>'',
+		'title_reply'=>__( 'Deixe um comentário' ) 
+    ));
+?>
 
 <?php if ( have_comments() ) : ?>
 

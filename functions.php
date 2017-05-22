@@ -1,19 +1,29 @@
 <?php
 
+//
+// Disable Notification Media Folder
+// -----------------------------------------------------------------------------
+function filter_plugin_updates( $value ) {
+	unset( $value->response['wp-media-folder/wp-media-folder.php'] );
+	return $value;
+}
+add_filter( 'site_transient_update_plugins', 'filter_plugin_updates' );
+
+
 // custom login logo
 function custom_login_logo() {
-	global $path_img; 
-	echo '<style type="text/css"> h1 a { 
-		width: auto !important; 
-		height: 100px !important; 
-		margin: 0 0 17px 0 !important; 
-		background-image:url(wp-content/themes/toperambulando/img/logo-admin.png) !important; background-size: auto auto !important;
+	global $path_img;
+	echo '<style type="text/css"> h1 a {
+		width: auto !important;
+		height: 100px !important;
+		margin: 0 0 17px 0 !important;
+		background-image:url(wp-content/themes/toperambulando/dist/img/logo-admin.png) !important; background-size: auto auto !important;
 	} </style>';
 }
 add_action( 'login_head', 'custom_login_logo' );
 
 // custom Footer
-function custom_admin_footer() { 
+function custom_admin_footer() {
 	echo 'Customizado por <a href="http://vitormelo.com.br/" title="Visite o site!">Vitor Melo</a>';
 }
 add_filter( 'admin_footer_text', 'custom_admin_footer' );
@@ -42,7 +52,7 @@ if ( function_exists( 'register_sidebar' ) ) {
 }
 
 // add style editor
-add_editor_style( 'css/editor.css' );
+add_editor_style( '/dist/css/wp/wp-editor.css' );
 
 // style editor
 remove_filter( 'the_content', 'wpautop' );
@@ -103,4 +113,3 @@ function slider() {
 add_action( 'init', 'slider', 0 );
 
 ?>
-

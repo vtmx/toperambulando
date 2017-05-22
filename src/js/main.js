@@ -1,5 +1,18 @@
 $(document).ready(function() {
 
+	// Nav fixed
+	var nav = $('nav');
+
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 350) {
+			nav.addClass('nav-fixed');
+		} else {
+			nav.removeClass('nav-fixed');
+		}
+	});
+
+
+
 	// Slider
 	$('header .slide').owlCarousel({
 		singleItem: true,
@@ -80,7 +93,7 @@ $(document).ready(function() {
 		}
 	});
 
-	// Social Popup			
+	// Social Popup
 	$('.post .social a').click(function() {
 		var sharer = $(this).attr('href');
 		var title = $(this).attr('title');
@@ -132,4 +145,3 @@ $(document).ready(function() {
 	});
 
 });
-
