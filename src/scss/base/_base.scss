@@ -1,0 +1,219 @@
+// =global
+// -----------------------------------------------------------------------------
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+::selection {
+	background: #f0f;
+	color: #fff;
+}
+
+::-moz-selection {
+	background: #f0f;
+	color: #fff;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+	transition: all .2s;
+}
+
+a:hover {
+	color: #f0f;
+}
+
+a:active {
+	color: #000;
+}
+
+a:focus {
+	outline: none;
+}
+
+img, video {
+	max-width: 100%;
+	height: auto;
+}
+
+strong {
+	font-weight: normal;
+	color: #000;
+}
+
+h1, h2, h3 {
+	color: #000;
+	font-weight: 300;
+}
+
+h1, h2, h3, p, ul {
+	margin: 0;
+	padding: 0;
+}
+
+h2 {
+	font-size: 30px
+}
+
+h3 {
+	font-size: 18px;
+}
+
+p {
+	margin-bottom: 20px;
+}
+
+ul {
+	list-style: none;
+}
+
+// =fonts
+// -----------------------------------------------------------------------------
+
+@font-face {
+	font-family: 'Martel Sans';
+	font-style: normal;
+	font-weight: 300;
+	src: local('Martel Sans Light'), local('MartelSans-Light'), url(../fonts/martel-sans-300.woff2) format('woff2');
+}
+
+// =body
+// -----------------------------------------------------------------------------
+
+body {
+	margin: 0;
+	padding: 0;
+	font: 16px/1.5 'Martel Sans', 'Helvetica Nue', 'Open Sans', 'Arial', 'sans-serif';
+	font-weight: 300;
+	text-rendering: optimizeLegibility;
+	font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	color: #777;
+
+}
+
+.header, .nav, .main, .container, .footer {
+	max-width: 1160px;
+	margin: 0 auto;
+}
+
+.home .browserupgrade {
+	position: fixed;
+	top: 0;
+	z-index: 1;
+	width: 100%;
+}
+
+.browserupgrade {
+	margin-bottom: 0;
+	padding: 10px 0 8px 0;
+	background: #fff;
+	border-bottom: 1px solid #eee;
+	text-align: center;
+	text-transform: uppercase;
+	white-space: nowrap;
+}
+
+.browserupgrade a {
+	color: #f0f;
+}
+
+.hidden {
+	display: none;
+}
+
+.social-links {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
+
+	.title {
+		margin-right: 5px;
+		text-align: center;
+	}
+
+	.link {
+		width: 40px;
+		height: 40px;
+		margin: 5px;
+		background-color: #000;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: 20px;
+		border-radius: 50%;
+
+		&:hover, &:active {
+			background-color: #f0f;
+		}
+	}
+
+	.facebook {
+		background-image: url(../img/icon-facebook.svg);
+	}
+
+	.twitter {
+		background-image: url(../img/icon-twitter.svg);
+	}
+
+	.instagram {
+		background-image: url(../img/icon-instagram-white.svg);
+	}
+
+	.tumblr {
+		background-image: url(../img/icon-tumblr.svg);
+	}
+
+	.google {
+		background-image: url(../img/icon-google.svg);
+	}
+
+	.pinterest {
+		background-image: url(../img/icon-pinterest.svg);
+	}
+
+	.youtube {
+		background-image: url(../img/icon-youtube.svg);
+	}
+
+	.mail {
+		background-image: url(../img/icon-mail.svg);
+	}
+}
+
+@media (min-width: 480px) {
+	.loading-overlay {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 1;
+		visibility: hidden;
+		height: 100%;
+		background: rgba(255,255,255,.9);
+		transition: .5s;
+		opacity: 0;
+	 }
+
+
+	 .loading-overlay-active {
+		 visibility: visible;
+		 opacity: 1;
+	 }
+
+	.loading-icon {
+		position: fixed;
+		top: 30%;
+		left: 50%;
+		z-index: 2;
+		width: 90px;
+		height: 90px;
+		margin-left: -45px;
+		background: rgba(255, 255, 255, .5) url(../img/loading.svg) no-repeat center center;
+		border-radius: 50%;
+	}
+}
