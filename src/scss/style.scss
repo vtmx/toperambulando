@@ -1,7 +1,10 @@
 // Style
 
-@import 'normalize';
-@import 'variables';
-@import 'mixins';
-@import 'main';
-@import 'plugins/plugins';
+@import 'components/normalize.scss';
+@import 'components/variables.scss';
+@import 'components/mixins.scss';
+@import 'components/main.scss';
+
+// plugins
+@import 'plugins/animation.scss';
+@import 'plugins/plugins.scss';

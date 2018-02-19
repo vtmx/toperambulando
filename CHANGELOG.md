@@ -1,7 +1,12 @@
 # Change Log
 
-Todas as alterações notáveis a este projeto serão documentados neste arquivo.
-Este projeto adere [Keepa Change Log](http://keepachangelog.com/pt-BR/).
+## [3.0.2] - 2018-02-18
+### Updated
+- Verificação de erro.
+
+## [3.0.1] - 2017-08-20
+### Updated
+- HTML, CSS and JS.
 
 ## [3.0.0] - 2016-06-27
 ### Changed

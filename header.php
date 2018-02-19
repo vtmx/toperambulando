@@ -28,7 +28,7 @@
 		<meta name="google-site-verification" content="e73WQKeIi1rlfKpa74UMErH0iZhfRq5g5XfYEmzQS2E">
 		<meta name="alexaVerifyID" content="Caor2z-hEOTlA7plwi_Axa4gKhY">
 
-		<?php wp_head(); ?>
+		<?php //wp_head(); ?>
 	</head>
 
 	<body <?php body_class(); ?>>
