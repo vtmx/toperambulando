@@ -10,7 +10,7 @@
 	<!-- Title -->
 	<title><?php wp_title(); ?></title>
 
-	<!-- Icon -->
+	<!-- Favicon -->
 	<link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/img/favicon.ico">
 
 	<!-- Styles -->
@@ -19,6 +19,9 @@
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/elements.css">
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/layout.css">
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/components.css">
+
+	<!-- Icons -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
 	<!-- SEO -->
 	<meta name="author" content="Herbert Terra">

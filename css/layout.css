@@ -44,7 +44,7 @@
 }
 
 .nav-top .social .link:hover {
-	color: var(--color5);
+	color: var(--orange);
 }
 
 /* search */
@@ -77,7 +77,7 @@
 
 .nav-top .search .button:hover {
 	cursor: pointer;
-	background: var(--color5);
+	background: var(--orange);
 }
 
 /* =nav-middle
@@ -139,7 +139,6 @@
 .menu > .menu-item {
 	float: left;
 	position: relative;
-	white-space: nowrap;
 }
 
 .menu > ul > .menu-item:first-of-type {
@@ -148,21 +147,40 @@
 
 .menu .menu-item a {
 	display: block;
+	margin-left: 1px;
 	padding: 0 16px;
-	color: #fff;
 	line-height: 48px;
-}
-
-.nav-bottom .menu-item a:hover,
-.nav-bottom .menu-item a:focus {
-	background: var(--color5);
+	white-space: nowrap;
 	color: #fff;
 }
 
-.menu > .menu-item > a > .icon {
-	display: inline-block;
-	margin-left: 5px;
+.menu-item a:hover,
+.menu-item a:focus,
+.current-menu-item > a {
+	background: var(--orange);
+	color: #fff;
 }
+
+.menu > .menu-item-has-children a::after {
+	display: inline-block;
+	margin-left: 8px;
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+}
+
+/* icon */
+
+.menu > .menu-item-has-children > a::after {
+	content: '\f078';
+}
+
+.menu > .menu-item-has-children .menu-item-has-children > a::after {
+	position: absolute;
+	right: 16px;
+	content: '\f054';
+}
+
+/* hover */
 
 .menu .menu-item:hover > ul {
 	display: block;
@@ -270,5 +288,5 @@
 }
 
 .scroll-top:hover {
-	background: var(--color5);
+	background: var(--orange);
 }

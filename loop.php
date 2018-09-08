@@ -35,8 +35,7 @@
 				<?php endif; ?>
 
 					<?php if (has_post_thumbnail()): ?>						
-						<a class="post-image-link" href="<?php the_permalink() ?>"><img class="post-image" src="https://placeimg.com/780/480/nature" alt="Imagem de destaque do post"></a>
-						<!-- <a class="post-image-link" href="<?php the_permalink() ?>"><?php the_post_thumbnail('medium', array('class' => '')); ?></a> -->
+						<a class="post-image-link" href="<?php the_permalink() ?>"><?php the_post_thumbnail('medium'); ?></a>
 					<?php else: ?>
 						<a class="post-image-link" href="<?php the_permalink() ?>"><img class="post-image" src="/img/sem-imagem.png" alt="Imagem de destaque do post"></a>
 					<?php endif; ?>				

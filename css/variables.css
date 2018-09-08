@@ -6,9 +6,6 @@
 :root {
 	--gray-dark: #333;
 	--gray-light: #eee;
-	--color1: #bf112e;
-	--color2: #02173e;
-	--color3: #13a399;
-	--color4: #f5941c;
-	--color5: #f16541;
+	--red: #bf112e;
+	--orange: #f16541;
 }

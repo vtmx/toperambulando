@@ -8,7 +8,7 @@
 }
 
 ::selection {
-    background: var(--color1);
+    background: var(--red);
     color: #fff;
 }
 
@@ -19,7 +19,7 @@ body {
 
 a {
     text-decoration: none;
-    color: var(--color5);
+    color: var(--orange);
     transition: all .2s;
 }
 

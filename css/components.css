@@ -34,7 +34,7 @@
 }
 
 .post-title a:hover {
-	color: var(--color5);
+	color: var(--orange);
 }
 
 .post-subtitle {
@@ -78,11 +78,11 @@
 	background: var(--gray-dark);
 }
 
-.post-image-link .post-image {
+.post-image-link img {
 	transition: all .3s;
 }
 
-.post-image-link:hover .post-image {
+.post-image-link:hover img {
 	transform: scale(1.05);
 	opacity: .9;
 }
@@ -111,7 +111,7 @@
 }
 
 .post-readmore-link:hover {
-	background: var(--color5);
+	background: var(--orange);
 }
 
 .post-content .post-readmore-link:hover {
@@ -138,7 +138,7 @@
 }
 
 .pagination .page-link:hover {
-	background: var(--color5);
+	background: var(--orange);
 }
 
 /* =single */
