@@ -1,0 +1,14 @@
+/* =variables
+------------------------------------------------------------------------------*/
+
+/* https://color.adobe.com/pt/cloud/aHR0cHM6Ly9jYy1hcGktYXNzZXRzLmFkb2JlLmlv/library/008eea25-88f0-4109-871e-27430701578f/theme/519ac13c-f49a-4ec0-b681-4652b999cc33/ */
+
+:root {
+	--gray-dark: #333;
+	--gray-light: #eee;
+	--color1: #bf112e;
+	--color2: #02173e;
+	--color3: #13a399;
+	--color4: #f5941c;
+	--color5: #f16541;
+}

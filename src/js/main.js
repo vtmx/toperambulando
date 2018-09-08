@@ -23,7 +23,7 @@ $(document).ready(function() {
 		autoHeight: true
 	});
 
-
+	
 
 	// Remove p empt
 	$('p').each(function() {

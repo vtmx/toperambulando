@@ -1,13 +1,18 @@
-				<footer role="contentinfo">
-					<p class="copyright">2006 - 2016 © Todos os direitos reservados por <a href="http://toperambulando.com.br/">Herber Terra</a></p>
-					<p class="designer">Tema por <a href="http://vitormelo.com.br/">Vitor Melo</a></p>
-					<a href="#" class="scroll-top"><i class="fa fa-chevron-up"></i></a>
-				</footer>
-			</div><!-- #main-container -->
-		</div><!-- #page-container -->
+				</div>
+			</main>
 
-		<!-- Script -->
-		<script src="<?php bloginfo('template_directory'); ?>/dist/js/script.js"></script>
+			<footer class="footer">
+				<div class="container">
+					<div class="copyright">2006 - 2018 © Todos os direitos reservados por <a href="/">Herber Terra</a></div>					
+					<div class="designer">Tema por <a href="http://vitormelo.com.br/">Vitor Melo</a></div>
+					<a class="scroll-top" href="#"><i class="icon fa fa-chevron-up"></i></a>
+				</div>
+			</footer>
+		</div>
+
+		<!-- Scripts -->
+		<script src="<?php bloginfo('template_directory'); ?>/js/script.js"></script>
+		<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
 
 		<!-- Google Analytics -->
 		<script>
