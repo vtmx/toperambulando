@@ -141,11 +141,10 @@
 	background: var(--orange);
 }
 
-/* =single */
+/* =single
+------------------------------------------------------------------------------*/
 
-.single .post-header,
-.single .post-meta,
-.single .post-content {
+.single .post {
 	max-width: 740px;
 	margin: 0 auto;
 }
@@ -154,23 +153,23 @@
 	text-align: center;
 }
 
-.single .post-title,
-.single .post-content,
-.single .post-subtitle {
-	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+.single .post {
+	font-family: 'Noto Serif', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-size: 16px;
+	line-height: 1.8;
 }
 
 .single .post-header {
 	margin: 32px auto;
 }
 
-.single .post-title {
-	font-size: 36px;
+.single .post .post-title {
+	font-size: 40px;
 	line-height: 1;
 }
 
-.single .post-subtitle {
-	font-size: 32px;
+.single .post .post-subtitle {
+	font-size: 1.95em;
 	line-height: 1.2;	
 }
 
@@ -181,41 +180,43 @@
 
 /* --- */
 
-.single .post {
-	font-size: 24px;
+.single .post h1,
+.single .post h2,
+.single .post h3,
+.single .post h4,
+.single .post h5,
+.single .post h6,
+.single .post p,
+.single .post blockquote,
+.single .post ol,
+.single .post ul {
+	margin-bottom: 32px;
 }
 
+.single .post h1,
 .single .post h2,
 .single .post h3,
 .single .post h4,
 .single .post h5,
 .single .post h6 {
-	font-family: sans-serif;
-	font-weight: bold;
-}
-
-.single .post p,
-.single .post blockquote,
-.single .post li {
-	margin: 0 0 32px 0;
+	font-weight: 700;
+	line-height: 1.4;
 }
 
 .single .post h2 {
-	font-size: 40px;
-	margin-bottom: 8px;
+	font-size: 32px;
 }
 
 .single .post h3 {
-	font-size: 32px;
-	margin-bottom: 4px;
-}
-
-.single .post h4 {
 	font-size: 24px;
 }
 
-.single .post h5 {
+.single .post h4 {
 	font-size: 18px;
+}
+
+.single .post h5 {
+	font-size: 16px;
 }
 
 .single .post h6 {
@@ -225,7 +226,7 @@
 .single .post blockquote,
 .single .post ol,
 .single .post ul {	
-	padding: 0 0 0 32px;
+	padding: 0 0 0 16px;
 }
 
 .single .post blockquote {	
@@ -241,6 +242,10 @@
 	list-style: disc;
 }
 
+.single .post li {
+	margin: 0 0 4px 0;
+}
+
 .single .post hr {
 	display: block;
 	margin: 32px 0 72px 0;
@@ -252,4 +257,10 @@
 
 .single .post hr::before {
 	content: '...';
+}
+
+/* =gallery */
+
+.single .post .blocks-gallery-item {
+	margin: 8px;
 }

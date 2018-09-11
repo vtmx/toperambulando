@@ -4,9 +4,7 @@
 			<article class="post">
 				<div class="post-header">
 					<h2 class="post-title">
-						<a class="post-link" href="<?php the_permalink() ?>">
-							<?php the_title(); ?>
-						</a>
+						<a class="post-link" href="<?php the_permalink() ?>"><?php the_title(); ?></a>
 					</h2>
 
 					<?php if (get_field('subtitle')): ?>
@@ -28,37 +26,26 @@
 					</div>
 				</div>
 
-				<?php if (get_field('featured-align') == 'right'): ?>
-					<div class="post-content-reverse">
-				<?php else: ?>
-					<div class="post-content">
-				<?php endif; ?>
-
-					<?php if (has_post_thumbnail()): ?>						
-						<a class="post-image-link" href="<?php the_permalink() ?>"><?php the_post_thumbnail('medium'); ?></a>
-					<?php else: ?>
-						<a class="post-image-link" href="<?php the_permalink() ?>"><img class="post-image" src="/img/sem-imagem.png" alt="Imagem de destaque do post"></a>
-					<?php endif; ?>				
-
-					<?php if (get_field('summary')): ?>
-						<div class="post-summary">
-							<p class="post-summary-text">
+				<?php if (get_field('featured-align') == 'right'): ?><div class="post-content-reverse"><?php else: ?><div class="post-content"><?php endif; ?>
+					<a class="post-image-link" href="<?php the_permalink() ?>"><?php the_post_thumbnail('medium'); ?></a>			
+					
+					<div class="post-summary">
+						<p class="post-summary-text">
+							<?php if (get_field('summary')): ?>
 								<?php the_field('summary'); ?>
-							</p>
+							<?php else: ?>
+								<?php the_excerpt(); ?>
+							<?php endif; ?>
+						</p>
 
-							<div class="post-readmore">
-								<a class="post-readmore-link" href="<?php the_permalink() ?>">Leia mais »</a>
-							</div>
+						<div class="post-readmore">
+							<a class="post-readmore-link" href="<?php the_permalink() ?>">Leia mais »</a>
 						</div>
-					<?php endif; ?>
+					</div>
 				</div>
 
 				<div class="post-tags">
-					<?php $tag = get_the_tags(); ?>
-						<?php if (!$tag) { ?>
-					<?php } else { ?>
-						<i class="fas fa-tags"></i> Tags: <?php the_tags(''); ?>
-					<?php } ?>
+					<i class="fas fa-tags"></i> Tags: <?php the_tags(''); ?>
 				</div>
 			</article>
 		<?php endwhile; ?>
