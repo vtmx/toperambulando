@@ -223,7 +223,6 @@
 	line-height: 48px;
 }
 
-.menu ul > .menu-item:first-child a,
 .menu ul > .menu-item:only-child a {
 	border-color: rgba(255, 255, 255, 0);
 }
@@ -306,4 +305,13 @@
 
 .scroll-top:hover {
 	background: var(--orange);
+}
+
+/* =media
+------------------------------------------------------------------------------*/
+
+@media(max-width: 1160px) {
+	body {
+		background: red;
+	}
 }

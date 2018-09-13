@@ -3,9 +3,7 @@
 		<?php while (have_posts()) : the_post() ?>
 			<article class="post">
 				<div class="post-header">
-					<h2 class="post-title">
-						<a class="post-link" href="<?php the_permalink() ?>"><?php the_title(); ?></a>
-					</h2>
+					<h2 class="post-title"><a class="post-link" href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
 
 					<?php if (get_field('subtitle')): ?>
 						<h3 class="post-subtitle"><?php the_field('subtitle'); ?></h3>
@@ -13,17 +11,9 @@
 				</div>
 
 				<div class="post-meta">
-					<div class="post-date">
-						<i class="fas fa-calendar"></i> <?php echo get_the_date('d/m/Y'); ?>
-					</div>
-
-					<div class="post-categories">
-						<i class="fas fa-folder"></i> Categoria: <?php the_category(', '); ?>
-					</div>
-					
-					<div class="post-comments">
-						<i class="fas fa-comment"></i> <?php comments_popup_link(('Sem comentário'), ('1 comentário'), ('% comentários')); ?>
-					</div>
+					<div class="post-date"><i class="fas fa-calendar"></i> <?php echo get_the_date('d/m/Y'); ?></div>
+					<div class="post-categories"><i class="fas fa-folder"></i> Categoria: <?php the_category(', '); ?></div>					
+					<div class="post-comments"><i class="fas fa-comment"></i> <?php comments_popup_link(('Sem comentário'), ('1 comentário'), ('% comentários')); ?></div>
 				</div>
 
 				<?php if (get_field('featured-align') == 'right'): ?><div class="post-content-reverse"><?php else: ?><div class="post-content"><?php endif; ?>
@@ -44,17 +34,13 @@
 					</div>
 				</div>
 
-				<div class="post-tags">
-					<i class="fas fa-tags"></i> Tags: <?php the_tags(''); ?>
-				</div>
+				<div class="post-tags"><i class="fas fa-tags"></i> Tags: <?php the_tags(''); ?></div>
 			</article>
 		<?php endwhile; ?>
 	</div>
 
 	<?php if(function_exists('wp_pagenavi')) { ?>
-		<div class="pagination">
-			<?php wp_pagenavi(); ?>
-		</div>
+		<div class="pagination"><?php wp_pagenavi(); ?></div>
 	<?php } ?>
 </div>
 

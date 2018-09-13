@@ -147,13 +147,6 @@
 .single .post {
 	max-width: 740px;
 	margin: 0 auto;
-}
-
-.post-hero {
-	text-align: center;
-}
-
-.single .post {
 	font-family: 'Noto Serif', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 	font-size: 16px;
 	line-height: 1.8;
@@ -164,7 +157,8 @@
 }
 
 .single .post .post-title {
-	font-size: 40px;
+	font-size: 36px;
+	margin: 0;
 	line-height: 1;
 }
 
@@ -173,25 +167,12 @@
 	line-height: 1.2;	
 }
 
-.single .post-meta {
+.single .post-date {
 	font-size: 18px;
-	margin-bottom: 32px;
+	color: var(--gray);
 }
 
-/* --- */
-
-.single .post h1,
-.single .post h2,
-.single .post h3,
-.single .post h4,
-.single .post h5,
-.single .post h6,
-.single .post p,
-.single .post blockquote,
-.single .post ol,
-.single .post ul {
-	margin-bottom: 32px;
-}
+/* single elements */
 
 .single .post h1,
 .single .post h2,
@@ -199,12 +180,21 @@
 .single .post h4,
 .single .post h5,
 .single .post h6 {
+	margin-top: 48px;
+	margin-bottom: 16px;
 	font-weight: 700;
 	line-height: 1.4;
 }
 
+.single .post p,
+.single .post blockquote,
+.single .post ol,
+.single .post ul {
+	margin-bottom: 32px;
+}
+
 .single .post h2 {
-	font-size: 32px;
+	font-size: 30px;
 }
 
 .single .post h3 {
@@ -229,7 +219,8 @@
 	padding: 0 0 0 16px;
 }
 
-.single .post blockquote {	
+.single .post blockquote {
+	margin: 0;
 	border-left: 5px solid var(--gray-dark);
 	font-style: italic;
 }
@@ -244,6 +235,7 @@
 
 .single .post li {
 	margin: 0 0 4px 0;
+	padding: 0 0 0 4px;
 }
 
 .single .post hr {
@@ -259,8 +251,70 @@
 	content: '...';
 }
 
+/* =figure */
+
+.single .post figure {
+	margin: 0 0 32px 0;
+}
+
+.single .post figure a {
+	display: block;
+	line-height: 0;
+}
+
+.single .post figcaption {
+	margin: 4px 0 0 0;
+}
+
 /* =gallery */
 
 .single .post .blocks-gallery-item {
 	margin: 8px;
+}
+
+/* =footer */
+
+.single .post-footer {
+	margin-bottom: 32px;
+	padding: 32px 0;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+
+.single .post-meta {	
+	margin-bottom: 32px;
+}
+
+.single .post-meta .post-categories {
+	display: block;
+	margin: 0 0 4px 0;
+}
+
+.single .post-social {
+	text-align: center;
+}
+
+.single .post-social .buttons {
+	display: flex;
+	justify-content: center;
+}
+
+.single .post-social .button {
+	padding: 4px 16px;
+	border-radius: 5px;
+	margin: 0 8px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: white;
+}
+
+.single .post-social .button:hover {
+	opacity: .9;
+}
+
+.single .post-social .facebook {
+	background-color: #3e5b98;
+}
+
+.single .post-social .gplus {
+	background-color: #d34836;
 }

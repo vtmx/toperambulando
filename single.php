@@ -11,9 +11,12 @@
 			
 			<div class="post-header">
 				<h1 class="post-title"><?php the_title(); ?></h1>
+				
 				<?php if (get_field('subtitle')): ?>
 					<h2 class="post-subtitle"><?php the_field('subtitle'); ?></h2>
 				<?php endif; ?>
+
+				<div class="post-date"><?php echo get_the_date('d/m/Y'); ?></div>
 			</div>
 
 			<div class="post-content">
@@ -22,18 +25,17 @@
 
 			<div class="post-footer">
 				<div class="container">
-					<div class="post-categories">
-						<i class="fas fa-folder"></i> Categoria: <?php the_category(', '); ?>
-					</div>
-
-					<div class="post-tags">
-						<i class="fas fa-tags"></i> Tags: <span itemprop="keywords"><?php the_tags(''); ?>
+					<div class="post-meta">
+						<div class="post-categories"><i class="fas fa-folder"></i> Categoria: <?php the_category(', '); ?></div>
+						<div class="post-tags"><i class="fas fa-tags"></i> Tags: <span itemprop="keywords"><?php the_tags(''); ?></div>
 					</div>
 
 					<div class="post-social">
 						<h3>Gostou desse post? Então compartilha!</h3>
-						<a class="btn facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink();?>" title="Compartilhe no Facebook"><i class="fab fa-facebook-square"></i></a>
-						<a class="btn gplus" target="_blank" href="https://plus.google.com/share?url=<?php the_permalink();?>"><i class="fab fa-google-plus-square"></i></a>
+						<div class="buttons">
+							<a class="button facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink();?>" title="Compartilhe no Facebook"><i class="fab fa-facebook-square"></i> Facebook</a>
+							<a class="button gplus" target="_blank" href="https://plus.google.com/share?url=<?php the_permalink();?>"><i class="fab fa-google-plus-square"></i> Google+</a>
+						</div>
 					</div>
 				</div>
 			</div>
