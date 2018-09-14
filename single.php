@@ -31,10 +31,10 @@
 					</div>
 
 					<div class="post-social">
-						<h3>Gostou desse post? Então compartilha!</h3>
+						<h3 class="title">Gostou desse post? Então compartilha!</h3>
 						<div class="buttons">
-							<a class="button facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink();?>" title="Compartilhe no Facebook"><i class="fab fa-facebook-square"></i> Facebook</a>
-							<a class="button gplus" target="_blank" href="https://plus.google.com/share?url=<?php the_permalink();?>"><i class="fab fa-google-plus-square"></i> Google+</a>
+							<a class="button facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink();?>" title="Compartilhe no Facebook"><i class="fab fa-facebook-f"></i> Facebook</a>
+							<a class="button gplus" target="_blank" href="https://plus.google.com/share?url=<?php the_permalink();?>"><i class="fab fa-google-plus-g"></i> Google+</a>
 						</div>
 					</div>
 				</div>
@@ -42,11 +42,10 @@
 		</article>
 	<?php endwhile;  ?>
 
-
 	<!-- Booking Banner -->
 	<div class="banner-booking">
 		<div class="container">
-			<h3>Precisando de Hotel?</h3> 
+			<h3 class="title">Precisando de Hotel?</h3> 
 			<p>Veja aqui no <a href="booking.com">booking.com</a> - Você reserva o hotel que está procurando com total segurança e pelo menor preço.</p>
 			<iframe width="728" height="90" scrolling="no" frameborder="0" name="banner" target="_blank" src="https://www.booking.com?aid=370639;tmpl=banners;size=728x90;lang=pt;target_aid=370639;theme=minimal;label=banner"></iframe>
 		</div>
