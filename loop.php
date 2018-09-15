@@ -12,7 +12,7 @@
 
 				<div class="post-meta">
 					<div class="post-date"><i class="fas fa-calendar"></i> <?php echo get_the_date('d/m/Y'); ?></div>
-					<div class="post-categories"><i class="fas fa-folder"></i> Categoria: <?php the_category(', '); ?></div>					
+					<div class="post-categories"><i class="fas fa-folder"></i> Categorias: <?php the_category(', '); ?></div>					
 					<div class="post-comments"><i class="fas fa-comment"></i> <?php comments_popup_link(('Sem comentário'), ('1 comentário'), ('% comentários')); ?></div>
 				</div>
 
@@ -29,12 +29,12 @@
 						</p>
 
 						<div class="post-readmore">
-							<a class="post-readmore-link" href="<?php the_permalink() ?>">Leia mais »</a>
+							<a class="button post-readmore-link" href="<?php the_permalink() ?>">Leia mais »</a>
 						</div>
 					</div>
 				</div>
 
-				<div class="post-tags"><i class="fas fa-tags"></i> Tags: <?php the_tags(''); ?></div>
+				<!-- <div class="post-tags"><i class="fas fa-tags"></i> Tags: <?php the_tags(''); ?></div> -->
 			</article>
 		<?php endwhile; ?>
 	</div>

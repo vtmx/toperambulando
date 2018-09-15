@@ -38,7 +38,8 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php if (is_home()) { body_class('archive'); } else { body_class(); } ?>>
+
 	<!--[if lt IE 8]>
 		<p class="browsehappy">Você está usando um navegador <strong>desatualizado</strong>. <a href="http://browsehappy.com/">Atualize seu navegador</a> para ter uma melhor experiência de navegação.</p>
 	<![endif]-->

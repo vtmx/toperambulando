@@ -1,5 +1,6 @@
 <?php
 // custom login logo
+// -----------------------------------------------------------------------------
 function custom_login_logo() {
 	global $path_img;
 	echo '<style type="text/css"> h1 a {
@@ -12,25 +13,26 @@ function custom_login_logo() {
 add_action('login_head', 'custom_login_logo');
 
 // custom footer
+// -----------------------------------------------------------------------------
 function custom_admin_footer() {
 	echo 'Customizado por <a href="http://vitormelo.com.br/" title="Visite o site!">Vitor Melo</a>';
 }
 add_filter('admin_footer_text', 'custom_admin_footer');
 
 // theme support
+// -----------------------------------------------------------------------------
 add_theme_support('post-thumbnails');
 add_theme_support('html5', array('comment-list', 'comment-form', 'search-form', 'gallery', 'caption'));
 
-// filter
-add_filter('use_default_gallery_style', '__return_false');
-
 // menu
+// -----------------------------------------------------------------------------
 function register_custom_menu() {
 	register_nav_menu('custom_menu', __('Menu'));
 }
 add_action('init', 'register_custom_menu');
 
 // register sidebar
+// -----------------------------------------------------------------------------
 if (function_exists('register_sidebar')) {
 	 register_sidebar(array(
 		'before_widget' => '<div class="widget">',
@@ -39,4 +41,11 @@ if (function_exists('register_sidebar')) {
 		'after_title' => '</h3>',
 	));
 }
+
+// comments
+// -----------------------------------------------------------------------------
+if(get_option('thread_comments')) {
+	wp_enqueue_script('comment-reply');
+}
+
 ?>

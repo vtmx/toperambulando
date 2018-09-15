@@ -1,32 +1,29 @@
-<?php 
-    comment_form(array(
-		'comment_notes_after'=>'',
-		'title_reply'=>__( 'Deixe um comentário' ) 
-    ));
+<?php
+// Referências
+// https://developer.wordpress.org/reference/functions/comment_form/
+// https://developer.wordpress.org/reference/functions/wp_list_comments/
 ?>
 
-<?php if ( have_comments() ) : ?>
-
+<?php if (have_comments()): ?>
 	<?php $args = array(
-		'walker'            => null,
-		'max_depth'         => '',
-		'style'             => 'ol',
-		'callback'          => null,
-		'end-callback'      => null,
-		'type'              => 'all',
-		'reply_text'        => 'Reply',
-		'page'              => '',
-		'per_page'          => '',
-		'avatar_size'       => 75,
-		'reverse_top_level' => null,
-		'reverse_children'  => '',
-		'format'            => 'html5', //or xhtml if no HTML5 theme support
-		'short_ping'        => false, // @since 3.6,
-	    'echo'              => true // boolean, default is true
+		'title_reply'          => '',
+		'comment_notes_before' => '',
+		'label_submit'         => 'Comentar',
+		'reply_text'           => 'Responder',
+		'title_reply_to'       => 'Responder para %s',
+		'format'               => 'html5',
+		'avatar_size'          => 100,
 	); ?>
 
-	<ol class="commentlist">
-		 <?php wp_list_comments( $args, $comments ); ?>
-	</ol>
+	<div class="comments-number">
+		<h3 class="title"><?php comments_number('Comentários', '1 Comentário', '% Comentários'); ?></h3>
+	</div>
 
+	<div class="comments-form">
+		<?php comment_form($args); ?>
+	</div>
+
+	<ul class="comments-list">
+		 <?php wp_list_comments($args); ?>
+	</ul>
 <?php endif; ?>

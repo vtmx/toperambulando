@@ -43,13 +43,13 @@
 	<?php endwhile;  ?>
 
 	<!-- Booking Banner -->
-	<div class="banner-booking">
+	<!-- <div class="banner-booking">
 		<div class="container">
 			<h3 class="title">Precisando de Hotel?</h3> 
 			<p>Veja aqui no <a href="booking.com">booking.com</a> - Você reserva o hotel que está procurando com total segurança e pelo menor preço.</p>
 			<iframe width="728" height="90" scrolling="no" frameborder="0" name="banner" target="_blank" src="https://www.booking.com?aid=370639;tmpl=banners;size=728x90;lang=pt;target_aid=370639;theme=minimal;label=banner"></iframe>
 		</div>
-	</div>
+	</div> -->
 	
 	<!-- Post Related -->
 	<div id="posts-related">
@@ -72,7 +72,6 @@
 			?>
 
 					<h3>Posts Relacionados</h3>
-
 					<div class="slide">
 						<?php
 							$my_query = new wp_query($args);
@@ -95,7 +94,7 @@
 		</div>
 	</div>
 
-	<div id="comments">
+	<div class="comments">
 		<div class="container">
 			<?php comments_template(); ?>
 		</div>

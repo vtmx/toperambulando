@@ -43,9 +43,13 @@ h1, h2, h3, h4, h5, h6 {
 
 /* =forms */
 
-button, [type='button'], [type='submit'], .button {
+button,
+[type='button'],
+[type='submit'],
+.button {
+	display: inline-block;
 	margin: 0 8px;
-	padding: 12px 16px;
+	padding: 8px 16px;
 	background: var(--gray-dark);
 	border: none;
 	border-radius: 3px;
@@ -54,7 +58,28 @@ button, [type='button'], [type='submit'], .button {
 	transition: all .2s;
 }
 
-button:hover, [type='button']:hover, [type='submit']:hover, .button:hover {
+button:hover,
+[type='button']:hover,
+[type='submit']:hover,
+.button:hover {
 	background: var(--orange);
 	cursor: pointer;
+}
+
+[type='text'],
+[type='email'],
+textarea {
+	border: 1px solid #ddd;
+	background: #fff;
+	padding: 8px;
+	transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+[type='text']:focus,
+[type='email']:focus,
+textarea:focus {
+	outline: none;
+	border-color: var(--orange);
+	box-shadow: 0 0 0 2px var(--orange);
+	;
 }
