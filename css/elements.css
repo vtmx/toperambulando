@@ -28,6 +28,22 @@ img {
     height: auto;
 }
 
+figure a {
+    overflow: hidden;
+    display: block;
+    line-height: 0;
+    background: var(--gray-dark);
+}
+
+figure a img {
+    transition: all .3s;
+}
+
+figure a:hover img {
+    transform: scale(1.05);
+    opacity: .9;
+}
+
 h1, h2, h3, h4, h5, h6, p, ul, ol {
 	margin: 0;
 	padding: 0;
@@ -72,7 +88,7 @@ textarea {
 	border: 1px solid #ddd;
 	background: #fff;
 	padding: 8px;
-	transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+	transition: border-color .2s ease-in-out, box-shadow .2s ease-in-out;
 }
 
 [type='text']:focus,
@@ -80,6 +96,5 @@ textarea {
 textarea:focus {
 	outline: none;
 	border-color: var(--orange);
-	box-shadow: 0 0 0 2px var(--orange);
-	;
+	box-shadow: 0 0 0 2px rgba(240, 100, 65, .3);
 }

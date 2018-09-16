@@ -52,7 +52,7 @@
 	</div> -->
 	
 	<!-- Post Related -->
-	<div id="posts-related">
+	<div class="post-related">
 		<div class="container">
 			<?php
 				$orig_post = $post;
@@ -64,14 +64,14 @@
 					$args=array(
 						'tag__in' => $tag_ids,
 						'post__not_in' => array($post->ID),
-						'posts_per_page'=> 6, // Number of related posts to display.
+						'posts_per_page'=> 3, // Number of related posts to display.
 						'orderby'=> 'date',
 						'order'=> 'ASC',
 						'caller_get_posts'=> 1
 					);
 			?>
 
-					<h3>Posts Relacionados</h3>
+					<h2>Posts Relacionados</h2>
 					<div class="slide">
 						<?php
 							$my_query = new wp_query($args);
@@ -80,8 +80,7 @@
 								<article itemscope itemtype="http://schema.org/Article">
 									<a href="<?php the_permalink(); ?>">
 										<figure><?php the_post_thumbnail('thumbnail', array('class' => 'thumb')); ?></figure>
-										<h4 itemprop="name"><?php the_title(); ?></h4>
-										<?php if (get_field('subtitle')): ?><h5><?php the_field('subtitle'); ?></h5><?php endif; ?>
+										<h3 class="title"><?php the_title(); ?></h3>
 									</a>
 								</article>
 						<?php endwhile; ?>
@@ -94,11 +93,7 @@
 		</div>
 	</div>
 
-	<div class="comments">
-		<div class="container">
-			<?php comments_template(); ?>
-		</div>
-	</div>
+	<?php comments_template(); ?>
 </div>
 
 <?php get_template_part('aside'); ?>

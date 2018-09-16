@@ -4,7 +4,7 @@
 			<footer class="footer">
 				<div class="container">
 					<div class="copyright">2006 - 2018 © Todos os direitos reservados por <a href="/">Herber Terra</a></div>					
-					<div class="designer">Tema por <a href="http://vitormelo.com.br/">Vitor Melo</a></div>
+					<div class="designer">Designer por <a href="http://vitormelo.com.br/">Vitor Melo</a></div>
 					<a class="scroll-top" href="#"><i class="icon fa fa-chevron-up"></i></a>
 				</div>
 			</footer>

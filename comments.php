@@ -15,15 +15,19 @@
 		'avatar_size'          => 100,
 	); ?>
 
-	<div class="comments-number">
-		<h3 class="title"><?php comments_number('Comentários', '1 Comentário', '% Comentários'); ?></h3>
-	</div>
+	<div class="comments">
+		<div class="container">
+			<div class="comments-number">
+				<h2 class="title"><?php comments_number('Comentários', '1 Comentário', '% Comentários'); ?></h2>
+			</div>
 
-	<div class="comments-form">
-		<?php comment_form($args); ?>
-	</div>
+			<div class="comments-form">
+				<?php comment_form($args); ?>
+			</div>
 
-	<ul class="comments-list">
-		 <?php wp_list_comments($args); ?>
-	</ul>
+			<ul class="comments-list">
+				<?php wp_list_comments($args); ?>
+			</ul>
+		</div>
+	</div>
 <?php endif; ?>
