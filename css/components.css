@@ -25,7 +25,8 @@
 .archive .post-title {
 	margin: 0;
 	padding: 0;
-	font-size: 24px;
+	font-size: 30px;
+	font-weight: bold;
 	line-height: 1.4;
 }
 
@@ -78,7 +79,7 @@
 
 .archive .post-summary p {
 	margin-bottom: 16px;
-	font-family: Georgia, sans-serif;
+	font-family: 'Segoe UI', Arial, sans-serif;
 	line-height: 1.7;
 }
 
@@ -130,8 +131,9 @@
 ------------------------------------------------------------------------------*/
 
 .single .main .container {
-	max-width: 700px;
+	max-width: 732px;
 	margin: 0 auto;
+	padding: 0 16px;
 }
 
 .single .post {
@@ -221,6 +223,10 @@
 	line-height: 30px;
 }
 
+.single .post blockquote cite {
+	font-style: normal;
+}
+
 .single .post ol {
 	list-style: decimal;
 }
@@ -230,8 +236,8 @@
 }
 
 .single .post li {
-	padding: 0 0 0 4px;
 	margin: 0 0 4px 0;
+	padding: 0;
 }
 
 .single .post hr {
@@ -239,7 +245,11 @@
 	margin: 64px 20rem;
 	height: 0;
 	border: none;
-	border-bottom: 2px solid var(--gray-dark);
+	border-bottom: 2px solid var(--gray);
+}
+
+.single .post a:hover {
+	text-decoration: underline;
 }
 
 /* =figure */
@@ -291,8 +301,9 @@
 .single .post-footer {
 	margin-bottom: 32px;
 	padding: 32px 0;
-	border-top: 1px solid #ddd;
-	border-bottom: 1px solid #ddd;
+	border-top: 1px solid var(--gray-light);
+	border-bottom: 1px solid var(--gray-light);
+	text-align: center;
 }
 
 .single .post-meta {	
@@ -305,10 +316,6 @@
 }
 
 /* social */
-
-.single .post-social {
-	text-align: center;
-}
 
 .single .post-social .title {
 	margin: 0 0 24px;
@@ -332,16 +339,34 @@
 }
 
 .single .post-social .button:hover {
+	text-decoration: none;
 	opacity: .9;
+}
+
+/* =post-banner */
+
+.single .post-banner {
+	padding: 0 32px;
+}
+
+.single .post-banner .title {
+	margin-bottom: 32px;
 }
 
 /* =post-related */
 
-.post-related {
+.single .post-related {
 	margin-bottom: 32px;
 	padding-bottom: 32px;
 	border-bottom: 1px solid var(--gray-light);
+}
 
+.single .post-related .title {
+	margin-bottom: 32px;
+}
+
+.single .post-related .slide {
+	display: flex;
 }
 
 /* =comments */
@@ -433,4 +458,12 @@
 		opacity: 1;
 		transform: translate3d(0, 0, 0);
 	}
-} 
+}
+
+/* =media */
+
+@media (max-width: 1060px) {
+	.scroll-top {
+		display: none;
+	}
+}
