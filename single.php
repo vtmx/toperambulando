@@ -24,18 +24,16 @@
 			</div>
 
 			<div class="post-footer">
-				<div class="container">
-					<div class="post-meta">
-						<div class="post-categories"><i class="fas fa-folder"></i> Categoria: <?php the_category(', '); ?></div>
-						<div class="post-tags"><i class="fas fa-tags"></i> Tags: <span itemprop="keywords"><?php the_tags(''); ?></div>
-					</div>
+				<div class="post-meta">
+					<div class="post-categories"><i class="fas fa-folder"></i> Categoria: <?php the_category(', '); ?></div>
+					<div class="post-tags"><i class="fas fa-tags"></i> Tags: <span itemprop="keywords"><?php the_tags(''); ?></div>
+				</div>
 
-					<div class="post-social">
-						<h3 class="title">Gostou desse post? Então compartilha!</h3>
-						<div class="buttons">
-							<a class="button facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink();?>" title="Compartilhe no Facebook"><i class="fab fa-facebook-f"></i> Facebook</a>
-							<a class="button gplus" target="_blank" href="https://plus.google.com/share?url=<?php the_permalink();?>"><i class="fab fa-google-plus-g"></i> Google+</a>
-						</div>
+				<div class="post-social">
+					<h3 class="title">Gostou desse post? Então compartilha!</h3>
+					<div class="buttons">
+						<a class="button facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink();?>" title="Compartilhe no Facebook"><i class="fab fa-facebook-f"></i> Facebook</a>
+						<a class="button gplus" target="_blank" href="https://plus.google.com/share?url=<?php the_permalink();?>"><i class="fab fa-google-plus-g"></i> Google+</a>
 					</div>
 				</div>
 			</div>
@@ -43,11 +41,11 @@
 	<?php endwhile;  ?>
 
 	<!-- Booking Banner -->
-	<div class="post-banner">
+	<!-- <div class="post-banner">
 		<h3 class="title">Precisando de Hotel?</h3> 
 		<p>Veja aqui no <a href="booking.com">booking.com</a> - Você reserva o hotel que está procurando com total segurança e pelo menor preço.</p>
 		<iframe width="728" height="90" scrolling="no" frameborder="0" name="banner" target="_blank" src="https://www.booking.com?aid=370639;tmpl=banners;size=728x90;lang=pt;target_aid=370639;theme=minimal;label=banner"></iframe>
-	</div>
+	</div> -->
 	
 	<!-- Post Related -->
 	<div class="post-related">
@@ -69,18 +67,20 @@
 		?>
 
 				<h3 class="title">Posts Relacionados</h3>
-				<div class="slide">
+
+				<div class="posts">
 					<?php
 						$my_query = new wp_query($args);
 						while($my_query->have_posts()) : $my_query->the_post();
 					?>
+						
 						<a class="post" href="<?php the_permalink(); ?>">
-							<figure><?php the_post_thumbnail('thumbnail', array('class' => 'thumb')); ?></figure>
+							<?php the_post_thumbnail('thumbnail', array('class' => 'thumb')); ?>
 							<h4 class="title"><?php the_title(); ?></h4>
 						</a>
+						
 					<?php endwhile; ?>
-				</div><!-- .slide -->
-
+				</div>
 			<?php endif; //if $tags ?>
 
 		<?php $post = $orig_post; ?>

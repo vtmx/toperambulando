@@ -1,0 +1,103 @@
+/* =archive
+------------------------------------------------------------------------------*/
+
+.archive .posts {
+	margin-bottom: 32px;
+}
+
+.archive .post {
+	padding: 24px 0 32px 0;
+	border-bottom: 1px solid #eee;
+}
+
+.archive .post:first-child {
+	padding-top: 0;
+}
+
+/* post header */
+
+.archive .post-header {
+	margin-bottom: 4px;
+}
+
+.archive .post-title {
+	margin: 0;
+	padding: 0;
+	font: bold 30px 'Trebuchet MS', Calibri, 'Segoe UI', Arial, sans-serif;
+	line-height: 1.4;
+}
+
+.archive .post-title a {
+	color: var(--gray-dark);
+}
+
+.archive .post-title a:hover {
+	color: var(--orange);
+}
+
+.archive .post-subtitle {
+	font-size: 18px;
+	color: #777;
+}
+
+.archive .post-meta {
+	margin: 0 0 24px 0;
+}
+
+.archive .post-meta a:hover,
+.archive .post-tags a:hover {
+	text-decoration: underline;
+}
+
+.archive .post-date,
+.archive .post-categories,
+.archive .post-comments {
+	display: inline-block;
+	margin-right: 16px;
+}
+
+/* =post-content */
+
+.archive .post-content,
+.archive .post-content-reverse {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.archive .post-content-reverse {
+	flex-direction: row-reverse;
+}
+
+.archive .post-image-link,
+.archive .post-summary {
+	max-width: calc(50% - 8px);
+}
+
+.archive .post-summary p {
+	margin-bottom: 16px;
+	font-family: 'Segoe UI', Arial, sans-serif;
+	line-height: 1.7;
+}
+
+.archive .post-content a:hover {
+	text-decoration: underline;
+}
+
+/* =readmore */
+
+.archive .post-readmore-link {
+	margin: 0;
+}
+
+.archive .post-readmore-link:hover {
+	text-decoration: none;
+}
+
+.archive .post-readmore-link:hover {
+	background: var(--orange);
+}
+
+.archive .post-readmore-link:hover {
+	text-decoration: none;
+}

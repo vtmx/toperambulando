@@ -4,7 +4,7 @@
 // https://developer.wordpress.org/reference/functions/wp_list_comments/
 ?>
 
-<?php if (have_comments()): ?>
+<div class="comments">
 	<?php $args = array(
 		'title_reply'          => '',
 		'comment_notes_before' => '',
@@ -15,17 +15,17 @@
 		'avatar_size'          => 100,
 	); ?>
 
-	<div class="comments">
-		<div class="comments-number">
-			<h3 class="title"><?php comments_number('Comentários', '1 Comentário', '% Comentários'); ?></h3>
-		</div>
+	<div class="comments-number">
+		<h3 class="title"><?php comments_number('Comentários', '1 Comentário', '% Comentários'); ?></h3>
+	</div>
 
-		<div class="comments-form">
-			<?php comment_form($args); ?>
-		</div>
-
+	<div class="comments-form">
+		<?php comment_form($args); ?>
+	</div>
+		
+	<?php if (have_comments()): ?>
 		<ul class="comments-list">
 			<?php wp_list_comments($args); ?>
-		</ul>
-	</div>
-<?php endif; ?>
+		</ul>	
+	<?php endif; ?>
+</div>

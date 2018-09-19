@@ -19,6 +19,10 @@
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/elements.css">
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/layout.css">
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/components.css">
+	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/utilities.css">
+	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/pages/archive.css">
+	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/pages/single.css">
+	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/pages/search.css">
 
 	<!-- Fonts -->
 	<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700"> -->

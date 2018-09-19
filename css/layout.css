@@ -99,7 +99,7 @@
 /* =logo */
 
 .nav-middle .logo {
-	margin-top: -32px;
+	margin: -32px 16px 0 0;
 }
 
 .nav-middle .logo-img {
@@ -266,7 +266,7 @@
 }
 
 .aside {
-	background: gray;
+	background: var(--gray-light);
 	padding: 0 16px;
 }
 
@@ -282,27 +282,6 @@
 	background: var(--gray-dark);
 	text-align: center;
 	color: white;
-}
-
-/* =scroll-top */
-
-.scroll-top {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: fixed;
-	bottom: 16px;
-	right: 16px;
-	width: 48px;
-	height: 48px;
-	border-radius: 3px;
-	background: var(--gray-dark);
-	color: white;
-	font-size: 18px;
-}
-
-.scroll-top:hover {
-	background: var(--orange);
 }
 
 /* =media
