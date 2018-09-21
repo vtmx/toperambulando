@@ -1,5 +1,5 @@
 <div class="content">
-		<div class="posts">
+	<div class="posts">
 		<?php while (have_posts()) : the_post() ?>
 			<article class="post">
 				<div class="post-header">
@@ -20,16 +20,14 @@
 					<a class="post-image-link" href="<?php the_permalink() ?>"><?php the_post_thumbnail('medium'); ?></a>			
 					
 					<div class="post-summary">
-						<p class="post-summary-text">
-							<?php if (get_field('summary')): ?>
-								<?php the_field('summary'); ?>
-							<?php else: ?>
-								<?php the_excerpt(); ?>
-							<?php endif; ?>
-						</p>
+						<?php if (get_field('summary')): ?>
+							<?php the_field('summary'); ?>
+						<?php else: ?>
+							<?php the_excerpt(); ?>
+						<?php endif; ?>
 
 						<div class="post-readmore">
-							<a class="button post-readmore-link" href="<?php the_permalink() ?>">Leia mais »</a>
+							<a class="button post-readmore-link" href="<?php the_permalink() ?>">Leia mais</a>
 						</div>
 					</div>
 				</div>
@@ -39,9 +37,11 @@
 		<?php endwhile; ?>
 	</div>
 
-	<?php if(function_exists('wp_pagenavi')) { ?>
-		<div class="pagination"><?php wp_pagenavi(); ?></div>
-	<?php } ?>
+	<?php if(function_exists('wp_pagenavi')): ?>
+		<div class="pagination">
+			<?php wp_pagenavi(); ?>
+		</div>
+	<?php endif; ?>
 </div>
 
 

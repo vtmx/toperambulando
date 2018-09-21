@@ -7,15 +7,6 @@
 	padding: 0 16px;
 }
 
-/* =header
-------------------------------------------------------------------------------*/
-
-.home .header,
-.archive .header {
-	margin-bottom: 16px;
-}
-
-
 /* =nav
 ------------------------------------------------------------------------------*/
 
@@ -256,13 +247,16 @@
 /* =main
 ------------------------------------------------------------------------------*/
 
-.home .main > .container,
-.archive .main > .container {
+.main > .container {
 	display: grid;
 	grid-template-columns: auto 362px; /* booking */
 	/* grid-template-columns: auto 332px; */
 	grid-column-gap: 32px;
-	margin: 0 auto 16px;
+	margin: 0 auto;
+}
+
+.main > .container {
+	padding: 16px 16px 0;
 }
 
 .aside {
@@ -290,5 +284,16 @@
 @media(max-width: 1160px) {
 	.header .nav-bottom .container {
 		padding: 0;
+	}
+}
+
+@media(max-width: 1024px) {
+	.main .container {
+		display: block;
+		max-width: 700px;
+	}
+
+	.aside {
+		display: none;
 	}
 }

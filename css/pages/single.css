@@ -2,6 +2,7 @@
 ------------------------------------------------------------------------------*/
 
 .single .main .container {
+	display: block;
 	max-width: 732px;
 	margin: 0 auto;
 	padding: 0 16px;
@@ -145,8 +146,6 @@
 	color: var(--gray-dark);
 }
 
-/* =guttemberg */
-
 /* =gallery */
 
 .single ul.wp-block-gallery {
@@ -159,7 +158,6 @@
 	margin: 8px;
 	padding: 0;
 }
-
 
 .single .wp-block-gallery .blocks-gallery-item figcaption {
 	margin: 0;

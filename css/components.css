@@ -6,11 +6,11 @@
 .pagination .wp-pagenavi {
 	display: flex;
 	align-items: stretch;
-	margin-bottom: 16px;	
+	margin-bottom: 32px;	
 }
 
 .pagination a,
-.pagination .current {
+.pagination span {
 	display: block;
 	margin-right: 4px;
 	padding: 8px 16px;
@@ -49,5 +49,18 @@
 @media (max-width: 1060px) {
 	.scroll-top {
 		display: none;
+	}
+}
+
+@media(max-width: 700px) {
+	.pagination .wp-pagenavi {
+		display: block;
+		text-align: center;
+	}
+
+	.pagination a,
+	.pagination span {
+		display: block;
+		margin-bottom: 4px;
 	}
 }
