@@ -351,3 +351,23 @@
 .single .aside {
 	display: none;
 }
+
+@media(max-width: 740px) {
+	.comments {
+		padding: 0 32px;
+	}
+
+	.comments-number, .comment-respond {
+		max-width: none;
+	}
+}
+
+@media(max-width: 480px) {
+	.comments {
+		padding: 0;
+	}
+
+	.comments-number, .comment-respond {
+		max-width: none;
+	}
+}

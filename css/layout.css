@@ -55,8 +55,11 @@
 
 .nav-top .search .text {
 	width: 200px;	
-	border: 1px solid #eee;
 	color: var(--gray-dark);
+}
+
+.nav-top .search .text:focus {
+	box-shadow: none;
 }
 
 .nav-top .search .button {
