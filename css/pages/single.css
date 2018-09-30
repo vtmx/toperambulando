@@ -124,6 +124,17 @@
 	text-decoration: underline;
 }
 
+.single .post .wp-block-button__link {
+	padding: 8px 16px;
+	border-radius: 3px;
+	font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.single .post .wp-block-button__link:hover {
+	text-decoration: none;
+	background: var(--orange);
+}
+
 /* =figure */
 
 .single .post figure {

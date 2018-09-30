@@ -24,6 +24,9 @@
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/pages/single.css">
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/pages/search.css">
 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css">
+
 	<!-- Fonts -->
 	<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700"> -->
 
@@ -48,47 +51,47 @@
 		<p class="browsehappy">Você está usando um navegador <strong>desatualizado</strong>. <a href="http://browsehappy.com/">Atualize seu navegador</a> para ter uma melhor experiência de navegação.</p>
 	<![endif]-->
 
-	<header class="header">
-		<nav class="nav nav-top">
-			<div class="container">
-				<div class="social">
-					<a class="link facebook" target="_blank" href="https://www.facebook.com/ToPerambulando" title="Tô Perambulando no Facebook">
-						<i class="icon fab fa-facebook-f"></i> Facebook
+		<div id="app">
+		<header class="header">
+			<nav class="nav nav-top">
+				<div class="container">
+					<div class="social">
+						<a class="link facebook" target="_blank" href="https://www.facebook.com/ToPerambulando" title="Tô Perambulando no Facebook">
+							<i class="icon fab fa-facebook-f"></i> Facebook
+						</a>
+						<a class="link instagram" target="_blank" href="https://www.instagram.com/toperambulando" title="Tô Perambulando no Instagram">
+							<i class="icon fab fa-instagram"></i> Instagram
+						</a>
+					</div>
+
+					<form role="search" method="get" id="searchform" class="search" action="<?php bloginfo('url'); ?>">
+						<input class="text" type="text" id="searchtext" value="" name="s" class="s" placeholder="<?php if( get_search_query() ) { echo get_search_query(); } else { echo 'Pesquisar'; } ?>">
+						<button class="button" type="submit" id="searchsubmit"><i class="icon fa fa-search"></i></button>
+					</form>
+				</div>
+			</nav>
+
+			<nav class="nav nav-middle">
+				<div class="container">
+					<a class="logo" href="<?php bloginfo('url'); ?>" title="tôPerambulando">
+						<img class="logo-img" src="<?php bloginfo('template_directory'); ?>/img/logo.svg" alt="Logo do site TôPerambulando">
 					</a>
-					<a class="link instagram" target="_blank" href="https://www.instagram.com/toperambulando" title="Tô Perambulando no Instagram">
-						<i class="icon fab fa-instagram"></i> Instagram
+
+					<a class="nav-middle-adsense" href="#">
+
 					</a>
 				</div>
+			</nav>
 
-				<form role="search" method="get" id="searchform" class="search" action="<?php bloginfo('url'); ?>">
-					<input class="text" type="text" id="searchtext" value="" name="s" class="s" placeholder="<?php if( get_search_query() ) { echo get_search_query(); } else { echo 'Pesquisar'; } ?>">
-					<button class="button" type="submit" id="searchsubmit"><i class="icon fa fa-search"></i></button>
-				</form>
-			</div>
-		</nav>
+			<nav class="nav nav-bottom">
+				<div class="container">
+					<?php wp_nav_menu( array( 'menu' => 'Menu' ) ); ?>
+					<button class="menu-toggle" data-target="nav-bottom-menu" aria-label="menu" aria-expanded="false">
+						<i class="icon fas fa-bars"></i>
+					</button>
+				</div>
+			</nav>	
+		</header>
 
-		<nav class="nav nav-middle">
-			<div class="container">
-				<a class="logo" href="<?php bloginfo('url'); ?>" title="tôPerambulando">
-					<img class="logo-img" src="<?php bloginfo('template_directory'); ?>/img/logo.svg" alt="Logo do site TôPerambulando">
-				</a>
-
-				<a class="nav-middle-adsense" href="#">
-
-				</a>
-			</div>
-		</nav>
-
-		<nav class="nav nav-bottom">
-			<div class="container">
-				<button class="menu-toggle" data-target="nav-bottom-menu" aria-label="menu" aria-expanded="false">
-					<i class="icon fas fa-bars"></i>
-				</button>
-				<?php wp_nav_menu( array( 'menu' => 'Menu' ) ); ?>
-			</div>
-		</nav>	
-	</header>
-
-	<body <?php body_class(); ?>>
 		<main class="main">
 			<div class="container">

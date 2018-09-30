@@ -12,6 +12,10 @@
     color: #fff;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
     font: 14px/1.5 'Segoe UI', Roboto, sans-serif;
     color: var(--gray-dark);
