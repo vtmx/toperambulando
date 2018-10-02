@@ -13,6 +13,7 @@
 		<!-- Scripts -->
 		<!-- <script src="<?php bloginfo('template_directory'); ?>/js/script.js"></script> -->
 		<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+		<script src="<?php bloginfo('template_directory'); ?>/js/plugins/plugins.js"></script>
 		<script src="<?php bloginfo('template_directory'); ?>/js/main.js"></script>
 			
 		<!-- Google Analytics -->

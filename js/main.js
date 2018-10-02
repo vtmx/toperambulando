@@ -1,9 +1,12 @@
 (function () {
 	'use strict'
 
+	var plugin = new Plugin()
+
 	if (window.matchMedia('(max-width: 700px)').matches) {
-		document.querySelector('.menu-toggle').addEventListener('click', menuToggle)
-		document.querySelector('.nav-top .search .button').addEventListener('click', searchToggle)
+		plugin.modal(document.querySelector('body'))
+		plugin.menuToggle(document.querySelector('.menu-toggle'), document.querySelector('.menu'))
+		plugin.searchToggle(document.querySelector('.nav-top .search .button'), document.querySelector('.nav-top .search .text'))
 	} else {
 		window.onscroll = function () { scrollToTop() }
 	}
@@ -17,15 +20,5 @@
 		} else {
 			navBottom.classList.remove('sticky')
 		}
-	}
-	
-	function menuToggle() {
-		e.preventDefault()
-		document.querySelector('.menu').classList.toggle('menu-active')
-	}
-
-	function searchToggle(e) {
-		e.preventDefault()
-		document.querySelector('.nav-top .search .text').classList.toggle('text-active')
-	}
+	}	
 })();
