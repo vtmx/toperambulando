@@ -1,24 +1,12 @@
 (function () {
 	'use strict'
 
-	var plugin = new Plugin()
+	const plugin = new Plugin()
 
-	if (window.matchMedia('(max-width: 700px)').matches) {
-		plugin.modal(document.querySelector('body'))
-		plugin.menuToggle(document.querySelector('.menu-toggle'), document.querySelector('.menu'))
-		plugin.searchToggle(document.querySelector('.nav-top .search .button'), document.querySelector('.nav-top .search .text'))
+	if (window.matchMedia('(min-width: 700px)').matches) {
+		plugin.sticky('.nav-bottom')
 	} else {
-		window.onscroll = function () { scrollToTop() }
+		plugin.menuToggle('.menu-toggle', '.menu')
+		plugin.searchToggle('.nav-top .search .button', '.nav-top .search .text')
 	}
-
-	function scrollToTop() {
-		let navBottom = document.querySelector('.nav-bottom')
-		let sticky = navBottom.offsetTop
-
-		if (window.pageYOffset > sticky) {
-			navBottom.classList.add('sticky')
-		} else {
-			navBottom.classList.remove('sticky')
-		}
-	}	
 })();
