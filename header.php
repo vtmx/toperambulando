@@ -77,7 +77,7 @@
 						<img class="logo-img" src="<?php bloginfo('template_directory'); ?>/img/logo.svg" alt="Logo do site TôPerambulando">
 					</a>
 
-					<a class="nav-middle-adsense" href="#">
+					<a class="adsense" href="#">
 
 					</a>
 				</div>

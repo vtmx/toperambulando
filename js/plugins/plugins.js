@@ -30,7 +30,7 @@ class Plugin {
 		button.addEventListener('click', function(e) {
 			e.preventDefault()
 			form.classList.toggle('text-active')
-			form.autofocus
+			form.focus()
 		})
 	}
 }
