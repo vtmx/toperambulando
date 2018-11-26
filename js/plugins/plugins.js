@@ -1,8 +1,8 @@
 class Plugin {
 	sticky(el) {
 		let nav = document.querySelector(el)
-		
-		window.onscroll = function() { 
+
+		window.onscroll = function () {
 			let sticky = nav.offsetTop
 
 			if (window.pageYOffset > sticky) {
@@ -17,9 +17,9 @@ class Plugin {
 		let button = document.querySelector(el)
 		let menu = document.querySelector(el1)
 
-		button.addEventListener('click', function(e) { 
+		button.addEventListener('click', function (e) {
 			e.preventDefault()
-			menu.classList.toggle('menu-active') 
+			menu.classList.toggle('menu-active')
 		})
 	}
 
@@ -27,11 +27,10 @@ class Plugin {
 		let button = document.querySelector(el)
 		let form = document.querySelector(el1)
 
-		button.addEventListener('click', function(e) {
+		button.addEventListener('click', function (e) {
 			e.preventDefault()
 			form.classList.toggle('text-active')
 			form.focus()
 		})
 	}
 }
-

@@ -24,8 +24,8 @@
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/pages/single.css">
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/pages/search.css">
 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css">
+	<!-- Styles Plugins -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.11/css/lightgallery.min.css">
 
 	<!-- Fonts -->
 	<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700"> -->

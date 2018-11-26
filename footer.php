@@ -11,10 +11,37 @@
 		</div><!-- #app -->
 
 		<!-- Scripts -->
-		<!-- <script src="<?php bloginfo('template_directory'); ?>/js/script.js"></script> -->
-		<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="<?php bloginfo('template_directory'); ?>/js/plugins/plugins.js"></script>
+		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.11/js/lightgallery.min.js"></script> -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.11/js/lightgallery-all.min.js"></script>
 		<script src="<?php bloginfo('template_directory'); ?>/js/main.js"></script>
+		<script>
+			$(document).ready(function() {
+				$('.wp-block-image').lightGallery({
+					selector: 'figure a',
+					counter: false,
+					download: false,
+					zoom: false,
+					actualSize: false,
+					fullScreen: false,
+					autoplayControls: false
+				})
+
+        		$('.wp-block-gallery').lightGallery({
+					selector: '.blocks-gallery-item figure a',
+					counter: false,
+					download: false,
+					thumbnail:true,
+					showThumbByDefault: false,
+					preload: 3,
+					zoom: false,
+					actualSize: false,
+					fullScreen: false,
+					autoplayControls: false
+				})
+    		})
+		</script>
 			
 		<!-- Google Analytics -->
 		<script>

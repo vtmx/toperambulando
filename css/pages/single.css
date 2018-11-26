@@ -53,7 +53,7 @@
 	line-height: 1.4;
 }
 
-.single .post p,
+.single .post p, .page .post-content p,
 .single .post blockquote,
 .single .post ol,
 .single .post ul,
@@ -133,6 +133,10 @@
 .single .post .wp-block-button__link:hover {
 	text-decoration: none;
 	background: var(--orange);
+}
+
+.single .post .wp-block-cover-image-text {
+	margin-bottom: 0;
 }
 
 /* =figure */

@@ -44,6 +44,10 @@
 	background: var(--orange);
 }
 
+.lg-backdrop {
+	background: rgba(0, 0, 0, .9) !important;
+}
+
 /* =media */
 
 @media(max-width: 700px) {

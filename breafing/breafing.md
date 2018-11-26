@@ -60,3 +60,8 @@ draft: true
 - [https://pegadasnaestrada.com.br/](https://pegadasnaestrada.com.br/)
 - [https://www.umviajante.com.br](https://www.umviajante.com.br)
 - [https://mycolor.space/?hex=%23F16541&sub=1](https://mycolor.space/?hex=%23F16541&sub=1)
+
+
+## Valor
+
+- 2.000 (pago em 2x)

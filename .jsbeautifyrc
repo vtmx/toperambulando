@@ -1,7 +1,0 @@
-{
-	"css": {
-		"newline_between_rules": true,
-		"selector_separator_newline": false,
-		"space_around_combinator": true
-	}
-}
