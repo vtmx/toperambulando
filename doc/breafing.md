@@ -35,6 +35,8 @@ draft: true
 - [ ] Não aparece a opção de pesquisa, se poder fazer como no exemplo acima, acho que fica bom.
 - [ ] A navegação entre as páginas no rodapé da pagina, só vai até a  sexta. Talvez fosse melhor diminuir no site para 6 , para poder aparecer, não?
 
+## Verificar
+
 ## Migração
 
 - A migração foi feita a partir da data 18/08/2018
