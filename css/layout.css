@@ -289,13 +289,27 @@
 	font: bold 16px Arial, Helvetica, sans-serif;
 }
 
-.widget .social-media a {
+.widget .social a {
 	display: block;
-	padding: 4px 0;
+	margin-bottom: 4px;
+	padding: 16px;
+	font-size: 14px;
+	background: #f8f8f8;
 }
 
-.widget .social-media a:hover {
+.widget .social a:hover {
 	text-decoration: underline;
+	text-decoration: none;
+	background: var(--orange);
+	color: #fff;
+}
+
+.widget .social i {
+	margin-right: 8px;
+}
+
+.widget .destinos figure {
+	margin-bottom: 8px;
 }
 
 /* =footer

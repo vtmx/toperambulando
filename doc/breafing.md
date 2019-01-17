@@ -37,6 +37,11 @@ draft: true
 
 ## Verificar
 
+## Tamanho das imagens
+- Thumb: 
+- Medium: 
+- Large: 
+
 ## Migração
 
 - A migração foi feita a partir da data 18/08/2018

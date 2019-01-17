@@ -12,6 +12,21 @@ function custom_login_logo() {
 }
 add_action('login_head', 'custom_login_logo');
 
+// Remove image medium_large
+// -----------------------------------------------------------------------------
+// add_filter( 'intermediate_image_sizes', function( $sizes )
+// {
+//     return array_filter( $sizes, function( $val )
+//     {
+//         return 'medium_large' !== $val; // Filter out 'medium_large'
+//     } );
+// } );
+
+// add_filter( 'intermediate_image_sizes', 'wpq_image_cleaner' );
+// 	function wpq_image_cleaner( $sizes ) {
+// 	// return array( 'thumb', 'medium', 'large' );
+// }
+
 // custom footer
 // -----------------------------------------------------------------------------
 function custom_admin_footer() {

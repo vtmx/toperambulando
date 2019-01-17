@@ -20,6 +20,7 @@
 			$(document).ready(function() {
 				$('.wp-block-image').lightGallery({
 					selector: 'figure a',
+					getCaptionFromTitleOrAlt: false,
 					counter: false,
 					download: false,
 					zoom: false,
@@ -30,16 +31,32 @@
 
         		$('.wp-block-gallery').lightGallery({
 					selector: '.blocks-gallery-item figure a',
+					getCaptionFromTitleOrAlt: false,
 					counter: false,
 					download: false,
-					thumbnail:true,
-					showThumbByDefault: false,
-					preload: 3,
 					zoom: false,
 					actualSize: false,
 					fullScreen: false,
-					autoplayControls: false
+					autoplayControls: false,
+					thumbnail:true,
+					showThumbByDefault: false,
+					preload: 3
 				})
+
+				// Get all images of post
+				// $('.post').lightGallery({
+				// 	selector: 'a[href$=".jpg"], a[href$=".png"], a[href$=".gif"]',
+				// 	getCaptionFromTitleOrAlt: false,
+				// 	counter: false,
+				// 	download: false,
+				// 	zoom: false,
+				// 	actualSize: false,
+				// 	fullScreen: false,
+				// 	autoplayControls: false,
+				// 	thumbnail:true,
+				// 	showThumbByDefault: false,
+				// 	preload: 3
+				// })				
     		})
 		</script>
 			

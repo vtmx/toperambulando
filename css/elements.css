@@ -32,6 +32,12 @@ img {
     height: auto;
 }
 
+figure {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
 figure a, .archive .post-image-link {
     overflow: hidden;
     display: block;
