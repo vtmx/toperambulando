@@ -187,7 +187,12 @@
 	padding: 32px 0;
 	border-top: 1px solid var(--gray-light);
 	border-bottom: 1px solid var(--gray-light);
+	font-family: Roboto, 'Segoe UI', Arial, sans-serif;
 	text-align: center;
+}
+
+.single .post-footer h3 {
+	font-family: Roboto, 'Segoe UI', Arial, sans-serif;
 }
 
 .single .post-meta {	
@@ -197,6 +202,17 @@
 .single .post-categories {
 	display: block;
 	margin: 0 0 4px 0;
+}
+
+.single .post-meta a {
+	padding: 4px;
+	background: #f8f8f8;
+}
+
+.single .post-meta a:hover {
+	background: var(--orange);
+	color: #fff;
+	text-decoration: none;
 }
 
 /* social */
@@ -248,7 +264,7 @@
 
 .single .post-related .title {
 	margin-bottom: 24px;
-	font: bold 24px Cambria, Georgia, serif;
+	font-size: 24px;
 	text-align: center;
 }
 
@@ -281,7 +297,7 @@
 
 .single .post-related .post .title {
 	margin: 0;
-	font: normal 14px Calibri, 'Segoe UI', sans-serif;
+	font: normal 14px Roboto, 'Segoe UI', sans-serif;
 	text-align: center;
 }
 

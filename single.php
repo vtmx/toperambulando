@@ -25,7 +25,7 @@
 
 			<div class="post-footer">
 				<div class="post-meta">
-					<div class="post-categories"><i class="fas fa-folder"></i> Categoria: <?php the_category(', '); ?></div>
+					<div class="post-categories"><i class="fas fa-folder"></i> Categorias: <?php the_category(', '); ?></div>
 					<div class="post-tags"><i class="fas fa-tags"></i> Tags: <span itemprop="keywords"><?php the_tags(''); ?></div>
 				</div>
 

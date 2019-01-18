@@ -17,7 +17,7 @@ html {
 }
 
 body {
-    font: 14px/1.5 'Segoe UI', Roboto, sans-serif;
+    font: 14px/1.5 Roboto, 'Segoe UI', sans-serif;
     color: var(--gray-dark);
 }
 
@@ -64,7 +64,7 @@ ul, ol {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-weight: normal;
+	font-weight: 700;
 }
 
 /* =forms */
@@ -79,7 +79,7 @@ button,
 	background: var(--gray-dark);
 	border: none;
 	border-radius: 3px;
-	font: 14px 'Segoe UI', Arial, sans-serif;
+	font: 14px;
 	text-decoration: none;
 	color: white;
 	transition: all .2s;

@@ -12,12 +12,14 @@
 
 				<div class="post-meta">
 					<div class="post-date"><i class="fas fa-calendar"></i> <?php echo get_the_date('d/m/Y'); ?></div>
-					<div class="post-categories"><i class="fas fa-folder"></i> Categorias: <?php the_category(', '); ?></div>					
-					<div class="post-comments"><i class="fas fa-comment"></i> <?php comments_popup_link(('Sem comentário'), ('1 comentário'), ('% comentários')); ?></div>
+					<div class="post-categories"><i class="fas fa-folder"></i> Categorias: <?php the_category(' '); ?></div>					
+					<!-- <div class="post-comments"><?php comments_popup_link(('Sem comentário'), ('1 comentário'), ('% comentários')); ?></div> -->
 				</div>
 
 				<?php if (get_field('featured-align') == 'right'): ?><div class="post-content-reverse"><?php else: ?><div class="post-content"><?php endif; ?>
-					<a class="post-image-link" href="<?php the_permalink() ?>"><?php the_post_thumbnail('medium'); ?></a>			
+					<div class="post-image">
+						<a class="post-image-link" href="<?php the_permalink() ?>"><?php the_post_thumbnail('large'); ?></a>
+					</div>
 					
 					<div class="post-summary">
 						<?php if (get_field('summary')): ?>

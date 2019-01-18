@@ -1,16 +1,16 @@
 <?php
 // custom login logo
 // -----------------------------------------------------------------------------
-function custom_login_logo() {
-	global $path_img;
-	echo '<style type="text/css"> h1 a {
-		width: auto !important;
-		height: 100px !important;
-		margin: 0 0 17px 0 !important;
-		background-image:url(wp-content/themes/toperambulando/dist/img/logo-admin.png) !important; background-size: auto auto !important;
-	} </style>';
-}
-add_action('login_head', 'custom_login_logo');
+// function custom_login_logo() {
+// 	global $path_img;
+// 	echo '<style type="text/css"> h1 a {
+// 		width: auto !important;
+// 		height: 100px !important;
+// 		margin: 0 0 17px 0 !important;
+// 		background-image:url(wp-content/themes/toperambulando/dist/img/logo-admin.png) !important; background-size: auto auto !important;
+// 	} </style>';
+// }
+// add_action('login_head', 'custom_login_logo');
 
 // Remove image medium_large
 // -----------------------------------------------------------------------------
@@ -29,10 +29,10 @@ add_action('login_head', 'custom_login_logo');
 
 // custom footer
 // -----------------------------------------------------------------------------
-function custom_admin_footer() {
-	echo 'Customizado por <a href="http://vitormelo.com.br/" title="Visite o site!">Vitor Melo</a>';
-}
-add_filter('admin_footer_text', 'custom_admin_footer');
+// function custom_admin_footer() {
+// 	echo 'Customizado por <a href="http://vitormelo.com.br/" title="Visite o site!">Vitor Melo</a>';
+// }
+// add_filter('admin_footer_text', 'custom_admin_footer');
 
 // theme support
 // -----------------------------------------------------------------------------

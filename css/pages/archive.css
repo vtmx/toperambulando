@@ -21,10 +21,10 @@
 }
 
 .archive .post-title {
-	margin: 0;
+	margin-bottom: 4px;
 	padding: 0;
-	font: bold 30px Arial, 'Segoe UI', sans-serif;
-	line-height: 1.4;
+	font-size: 30px;
+	line-height: 1.2;
 }
 
 .archive .post-title a {
@@ -36,23 +36,36 @@
 }
 
 .archive .post-subtitle {
+	margin-bottom: 4px;
 	font-size: 18px;
+	font-weight: normal;
 	color: #777;
 }
 
 .archive .post-meta {
-	margin: 0 0 24px 0;
+	margin: 0 0 16px 0;
+	color: #999;
+}
+
+.archive .post-meta a {
+	background: #f8f8f8;
+	padding: 4px 8px;
 }
 
 .archive .post-meta a:hover {
-	text-decoration: underline;
+	color: #fff;
+	background: var(--orange);
 }
 
 .archive .post-date,
 .archive .post-categories,
 .archive .post-comments {
 	display: inline-block;
-	margin-right: 16px;
+	margin-right: 8px;
+}
+
+.archive .post-categories a {
+	margin-right: 2px;
 }
 
 /* =post-content */
@@ -68,20 +81,14 @@
 	flex-direction: row-reverse;
 }
 
-.archive .post-image-link,
+.archive .post-image,
 .archive .post-summary {
-	max-width: calc(50% - 8px);
-}
-
-.archive .post-image-link {
-	display: block;
-	line-height: 0;
+	width: calc(442px - 32px);
 }
 
 .archive .post-summary p {
 	margin-bottom: 16px;
-	font-family: 'Segoe UI', Arial, sans-serif;
-	line-height: 1.7;
+	line-height: 1.8;
 }
 
 .archive .post-summary p a:hover {
@@ -96,6 +103,7 @@
 
 .archive .post-readmore-link:hover {
 	background: var(--orange);
+	text-decoration: none;
 }
 
 .archive .post-readmore-link::after {
