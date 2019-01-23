@@ -12,7 +12,7 @@
 .single .post {
 	margin: 0 auto;
 	font-family: Georgia, serif;
-	font-size: 16px;
+	font-size: 18px;
 	line-height: 1.8;
 }
 
@@ -205,8 +205,9 @@
 }
 
 .single .post-meta a {
-	padding: 4px;
+	padding: 4px 8px;
 	background: #f8f8f8;
+	border-radius: 3px;
 }
 
 .single .post-meta a:hover {
