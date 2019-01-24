@@ -74,7 +74,6 @@
 .archive .post-content,
 .archive .post-content-reverse {
 	display: flex;
-	justify-content: space-between;
 	align-items: flex-start;
 }
 
@@ -84,7 +83,15 @@
 
 .archive .post-image,
 .archive .post-summary {
-	width: calc(442px - 32px);
+	width: 424px;
+}
+
+.archive .post-content .post-image {
+	margin-right: 32px;
+}
+
+.archive .post-content-reverse .post-image {
+	margin-left: 32px;
 }
 
 .archive .post-summary p {
@@ -113,7 +120,7 @@
 
 /* =media */
 
-@media(max-width: 700px) {
+@media(max-width: 720px) {
 	.archive .post {
 		text-align: center;
 	}
@@ -125,7 +132,7 @@
 	.archive .post-date,
 	.archive .post-categories {
 		display: block;
-		margin-bottom: 4px;
+		margin-bottom: 8px;
 	}
 
 	.archive .post-comments {
@@ -138,17 +145,17 @@
 
 	.archive .post-content,
 	.archive .post-content-reverse {
-		display: block;
+		flex-direction: column;
 	}
 
-	.archive .post-image-link,
+	.archive .post-image,
 	.archive .post-summary {
-		max-width: 100%;
+		width: 100%;
 	}
 
-	.archive .post-image-link {
-		margin-bottom: 16px;
-		background: linear-gradient(to right, white 0%, var(--gray-light) 50%, white 100%);
+	.archive .post-content .post-image,
+	.archive .post-content-reverse .post-image {
+		margin: 0 0 16px;
 	}
 
 	.archive .post-summary p {

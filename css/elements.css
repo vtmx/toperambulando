@@ -67,6 +67,21 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 700;
 }
 
+table {
+	width: 100%;
+	border-spacing: 0;
+	font-family: Cambria, Georgia, serif;
+}
+
+th {
+	text-align: left;
+}
+
+th, td {
+	padding: 4px;
+	border-bottom: 1px solid var(--gray-light);
+}
+
 /* =forms */
 
 button,
@@ -95,7 +110,8 @@ button:hover,
 
 [type='text'],
 [type='email'],
-textarea {
+textarea,
+select {
 	border: 1px solid #ddd;
 	background: #fff;
 	padding: 8px;
@@ -104,7 +120,8 @@ textarea {
 
 [type='text']:focus,
 [type='email']:focus,
-textarea:focus {
+textarea:focus,
+select:focus {
 	outline: none;
 	border-color: var(--orange);
 	box-shadow: 0 0 0 2px rgba(240, 100, 65, .3);

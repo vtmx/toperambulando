@@ -276,10 +276,6 @@
 
 /* =aside */
 
-.aside {
-	padding: 0 16px;
-}
-
 .widget {
 	margin-bottom: 16px;
 }
@@ -327,13 +323,21 @@
 /* =media
 ------------------------------------------------------------------------------*/
 
-@media(max-width: 1160px) {
+@media(max-width: 1280px) {
 	.header .nav-bottom .container {
 		padding: 0;
 	}
+
+	.main > .container {
+		grid-template-columns: auto;
+	}
+
+	.aside {
+		display: none;
+	}
 }
 
-@media(max-width: 1024px) {
+@media(max-width: 1280px) {
 	.main .container {
 		display: block;
 		max-width: 700px;
@@ -344,7 +348,7 @@
 	}
 }
 
-@media(max-width: 700px) {
+@media(max-width: 720px) {
 	
 	/* header */
 	.header {
@@ -425,6 +429,10 @@
 
 	.menu-toggle:active {
 		background: var(--orange);
+	}
+
+	.sticky {
+		position: relative;
 	}
 
 	/* =menu */
