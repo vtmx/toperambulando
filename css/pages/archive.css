@@ -14,14 +14,15 @@
 	padding-top: 0;
 }
 
-/* =post-header */
+/* post-header */
 
-.archive .post-header {
-	margin-bottom: 4px;
+.archive .post-header,
+.archive .post-title,
+.archive .post-subtitle  {
+	margin: 0 0 4px;
 }
 
 .archive .post-title {
-	margin-bottom: 4px;
 	padding: 0;
 	font-size: 30px;
 	line-height: 1.2;
@@ -36,14 +37,13 @@
 }
 
 .archive .post-subtitle {
-	margin-bottom: 4px;
 	font-size: 18px;
 	font-weight: normal;
 	color: #777;
 }
 
 .archive .post-meta {
-	margin: 0 0 16px 0;
+	margin: 8px 0 16px 0;
 	color: #999;
 }
 
@@ -58,8 +58,7 @@
 }
 
 .archive .post-date,
-.archive .post-categories,
-.archive .post-comments {
+.archive .post-categories {
 	display: inline-block;
 	margin-right: 8px;
 }
@@ -95,7 +94,7 @@
 }
 
 .archive .post-summary p {
-	margin-bottom: 16px;
+	margin: 0 0 16px;
 	line-height: 1.8;
 }
 
@@ -105,16 +104,16 @@
 
 /* =readmore */
 
-.archive .post-readmore-link {
+.archive .post-readmore {
 	margin: 0;
 }
 
-.archive .post-readmore-link:hover {
+.archive .post-readmore:hover {
 	background: var(--orange);
 	text-decoration: none;
 }
 
-.archive .post-readmore-link::after {
+.archive .post-readmore::after {
 	content: ' »';
 }
 
@@ -123,6 +122,10 @@
 @media(max-width: 720px) {
 	.archive .post {
 		text-align: center;
+	}
+
+	.archive .post-title {
+		margin-bottom: 0;
 	}
 
 	.archive .post-title a {
@@ -135,12 +138,8 @@
 		margin-bottom: 8px;
 	}
 
-	.archive .post-comments {
-		display: none;
-	}
-
 	.archive .post-meta {
-		margin-top: 16px;
+		margin: 4px 0 16px;
 	}
 
 	.archive .post-content,
@@ -162,13 +161,8 @@
 		text-align: left;
 	}
 
-	.archive .post-readmore-link {
-		width: 100%;
+	.archive .post-readmore {
 		padding: 16px;
 		text-transform: uppercase;
-	}
-
-	.archive .post-readmore-link::after {
-		content: '';
 	}
 }

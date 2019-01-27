@@ -54,18 +54,44 @@ figure a:hover img, .archive .post-image-link:hover img {
     opacity: .9;
 }
 
+p, blockquote, ol, ul, table, figure {
+	margin-bottom: 32px;
+}
+
 h1, h2, h3, h4, h5, h6, p, ul, ol {
-	margin: 0;
 	padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 700;
+	line-height: 1.4;
+}
+
+h2 {
+	font-size: 30px;
+}
+
+h3 {
+	font-size: 24px;
+}
+
+h4 {
+	font-size: 18px;
+}
+
+h5 {
+	font-size: 16px;
+}
+
+h6 {
+	font-size: 14px;
 }
 
 ul, ol {
     list-style: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
-	font-weight: 700;
-}
+/* table */
 
 table {
 	width: 100%;
@@ -89,8 +115,8 @@ button,
 [type='submit'],
 .button {
 	display: inline-block;
-	margin: 0 8px;
-	padding: 8px 16px;
+	margin: 0 16px 0 0;
+	padding: 12px 16px;
 	background: var(--gray-dark);
 	border: none;
 	border-radius: 3px;
@@ -125,4 +151,12 @@ select:focus {
 	outline: none;
 	border-color: var(--orange);
 	box-shadow: 0 0 0 2px rgba(240, 100, 65, .3);
+}
+
+hr {
+	display: block;
+	margin: 64px 20rem;
+	height: 0;
+	border: none;
+	border-bottom: 2px solid var(--gray);
 }

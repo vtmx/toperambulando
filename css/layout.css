@@ -140,6 +140,7 @@
 
 .menu {
 	display: flex;
+	margin: 0;
 }
 
 .menu > .menu-item {
@@ -317,6 +318,12 @@
 	padding: 22px 0;
 	background: var(--gray-dark);
 	text-align: center;
+	color: white;
+}
+
+.footer .copyright a:hover,
+.footer .designer a:hover {
+	text-decoration: underline;
 	color: white;
 }
 

@@ -16,17 +16,17 @@
 	line-height: 1.8;
 }
 
-.single .post .post-header {
+.single .post-header {
 	margin: 32px auto;
 }
 
-.single .post .post-title {
+.single .post-title {
 	font-size: 36px;
 	margin: 0;
 	line-height: 1;
 }
 
-.single .post .post-subtitle {
+.single .post-subtitle {
 	margin: 8px 0 0 0;
 	font-size: 24px;
 	font-weight: normal;
@@ -34,60 +34,29 @@
 	color: var(--gray);
 }
 
-.single .post .post-date {
+.single .post-date {
 	font-size: 18px;
 	color: var(--gray);
 }
 
 /* single elements */
 
-.single .post h1,
-.single .post h2,
-.single .post h3,
-.single .post h4,
-.single .post h5,
-.single .post h6 {
+.single h1,
+.single h2,
+.single h3,
+.single h4,
+.single h5,
+.single h6 {
 	margin: 48px 0 16px 0;
-	font-family: Cambria, Georgia, serif;
-	font-weight: bold;
-	line-height: 1.4;
+	font-family: "Noto Serif", Cambria, Georgia, serif;
 }
 
-.single .post p, .page .post-content p,
-.single .post blockquote,
-.single .post ol,
-.single .post ul,
-.single .post figure {
-	margin-bottom: 32px;
+.single .post-content a:hover {
+	text-decoration: underline;
 }
 
-.single .post h2 {
-	font-size: 30px;
-}
-
-.single .post h3 {
-	font-size: 24px;
-}
-
-.single .post h4 {
-	font-size: 18px;
-}
-
-.single .post h5 {
-	font-size: 16px;
-}
-
-.single .post h6 {
-	font-size: 14px;
-}
-
-.single .post ol,
-.single .post ul {	
-	padding: 0 0 0 16px;
-}
-
-.single .post blockquote {
-	margin: 0;
+.post blockquote {
+	margin: 0 0 32px;
 	padding: 0 0 0 24px;
 	border-left: 5px solid var(--gray-dark);
 	font-size: 18px;
@@ -95,47 +64,41 @@
 	line-height: 30px;
 }
 
-.single .post blockquote cite {
-	font-style: normal;
+.post ol,
+.post ul {	
+	padding: 0 0 0 16px;
 }
 
-.single .post ol {
+.post ol {
 	list-style: decimal;
 }
 
-.single .post ul {
+.post ul {
 	list-style: disc;
 }
 
-.single .post li {
+.post li {
 	margin: 0 0 4px 0;
 	padding: 0;
 }
 
-.single .post hr {
-	display: block;
-	margin: 64px 20rem;
-	height: 0;
-	border: none;
-	border-bottom: 2px solid var(--gray);
+.post blockquote p {
+	margin-bottom: 16px;
 }
 
-.single .post a:hover {
-	text-decoration: underline;
+.single blockquote cite {
+	font-style: normal;
+	color: var(--gray);
 }
 
-.single .post .wp-block-button__link {
-	padding: 8px 16px;
-	border-radius: 3px;
-	font-family: 'Segoe UI', Arial, sans-serif;
-}
+/* wp-block */
 
-.single .post .wp-block-button__link:hover {
+.post .wp-block-button__link:hover {
 	text-decoration: none;
 	background: var(--orange);
 }
 
-.single .post .wp-block-cover-image-text {
+.post .wp-block-cover-image-text {
 	margin-bottom: 0;
 }
 
@@ -163,18 +126,18 @@
 
 /* =gallery */
 
-.single ul.wp-block-gallery {
+.post .wp-block-gallery {
 	margin-bottom: calc(32px - 8px);
 	padding: 0;
 	list-style: none;
 }
 
-.single .wp-block-gallery .blocks-gallery-item {
-	margin: 8px;
+.post .blocks-gallery-item {
+	margin: 0 16px 16px 0;
 	padding: 0;
 }
 
-.single .wp-block-gallery .blocks-gallery-item figcaption {
+.post .blocks-gallery-item figcaption {
 	margin: 0;
 	padding: 40px 12px 12px;
 	font-family: sans-serif;
@@ -182,7 +145,7 @@
 
 /* =footer */
 
-.single .post-footer {
+.post-footer {
 	margin-bottom: 32px;
 	padding: 32px 0;
 	border-top: 1px solid var(--gray-light);
@@ -218,28 +181,32 @@
 
 /* social */
 
-.single .post-social .title {
+.post-social .title {
 	margin: 0 0 24px;
 }
 
-.single .post-social .buttons {
+.post-social .buttons {
 	display: flex;
 	justify-content: center;
 }
 
-.single .post-social .button i {
+.post-social .button {
+	padding: 8px 16px;
+}
+
+.post-social .button i {
 	margin-right: 4px;
 }
 
-.single .post-social .facebook {
+.post-social .facebook {
 	background-color: #3e5b98;
 }
 
-.single .post-social .gplus {
+.post-social .gplus {
 	background-color: #d34836;
 }
 
-.single .post-social .button:hover {
+.post-social .button:hover {
 	text-decoration: none;
 	opacity: .9;
 }
@@ -257,46 +224,46 @@
 
 /* =post-related */
 
-.single .post-related {
+.post-related {
 	margin-bottom: 32px;
 	padding-bottom: 32px;
 	border-bottom: 1px solid var(--gray-light);
 }
 
-.single .post-related .title {
+.post-related .title {
 	margin-bottom: 24px;
 	font-size: 24px;
 	text-align: center;
 }
 
-.single .post-related .posts {
+.post-related .posts {
 	display: flex;
 }
 
-.single .post-related a,
-.single .post-related img {
+.post-related a,
+.post-related img {
 	display: block;
 }
 
-.single .post-related a {
+.post-related a {
 	margin: 8px;
 	color: var(--gray-dark);
 }
 
-.single .post-related a:hover {
+.post-related a:hover {
 	color: var(--orange);
 }
 
-.single .post-related img {
+.post-related img {
 	margin-bottom: 8px;
 	transition: all .2s;
 }
 
-.single .post-related a:hover img {
+.post-related a:hover img {
 	opacity: .9;
 }
 
-.single .post-related .post .title {
+.post-related .post .title {
 	margin: 0;
 	font: normal 14px Roboto, 'Segoe UI', sans-serif;
 	text-align: center;
@@ -311,6 +278,7 @@
 
 .comments-number .title {
     margin-bottom: 24px;
+	font-family: Roboto, 'Segoe UI', sans-serif;
 }
 
 /* comments form */

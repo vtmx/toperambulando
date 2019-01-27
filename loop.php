@@ -28,9 +28,7 @@
 							<?php the_excerpt(); ?>
 						<?php endif; ?>
 
-						<div class="post-readmore">
-							<a class="button post-readmore-link" href="<?php the_permalink() ?>">Leia mais</a>
-						</div>
+						<a class="button post-readmore" href="<?php the_permalink() ?>">Leia mais</a>
 					</div>
 				</div>
 
@@ -45,8 +43,3 @@
 		</div>
 	<?php endif; ?>
 </div>
-
-
-
-
-

@@ -23,6 +23,7 @@
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/pages/archive.css">
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/pages/search.css">
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/pages/single.css">
+	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/pages/page.css">
 
 	<!-- Styles Plugins -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.11/css/lightgallery.min.css">
