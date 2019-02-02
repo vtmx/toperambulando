@@ -14,6 +14,16 @@
 	padding-top: 0;
 }
 
+.archive .post:last-child {
+	padding-bottom: 0;
+	border-bottom: none;
+}
+
+.archive .wp-pagenavi {
+	padding-top: 32px;
+	border-top: 1px solid #eee;
+}
+
 /* post-header */
 
 .archive .post-header,

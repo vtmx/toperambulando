@@ -16,23 +16,23 @@ draft: true
 - [x] A caixa de pesquisa precisa ser ajustada, as vezes faço uma procura com uma palavra chave e ele me trás coisas completamente diferentes. Por exemplo procure “Katmandu”, além dos dois posts que tem essa referencia ele trás  Foz do Iguaçu, que não tem nada haver.
 - [x] Quanto as cores o Brown e marinho não estão funcionando e também gostaria de criar as cores #0000FF e #00A651
 - [ ] Precisava criar uma área livre, pode até ser uma aba como a introdução onde eu possa colocar uma chamada para um ou mais post  importante, um vídeo, uma ou várias fotos foto. Ela pode ser do tamanho de uma foto (780 x 585). Mas  eu gostaria de ter a opção de colocar algo ou não, assim se não colocar não ficaria com o espaço em branco, como é feito com a introdução, senão colocar nada o relato ou o roteiro sobe. Veja um exemplo nesse link: http://www.queroviajarmais.com/
-- [ ] Tem como escolher se a imagem destacada fique na direita ou na esquerda?
-- [ ] O Titulo dos post pode deixar na esquerda mesmo, porque muito eventualmente posso coloc-alo no meio.
-- [ ] Os Titulos widgets poderia ficar mais destacados? Por exemplo com uma outra cor de fundo, claro uma cor que combine né? 
+- [x] Tem como escolher se a imagem destacada fique na direita ou na esquerda?
+- [x] O Titulo dos post pode deixar na esquerda mesmo, porque muito eventualmente posso coloc-alo no meio.
+- [x] Os Titulos widgets poderia ficar mais destacados? Por exemplo com uma outra cor de fundo, claro uma cor que combine né? 
 - [ ] Uma outra área que precisava era no rodapé, não sei se é possível mais ela poderia ser reajusta conforme o tamanho do que for colocar lá? Por exemplo posso colocar somente o copyright ou  chamadas para parceiros etc. Veja dois exemplos nesses links: https://pegadasnaestrada.com.br/ 
 
 ## Com relação aos Posts
 
 - [x] Queria retirar o slider dos posts, para dar mais visibilidade. Os posts ficaram somente com o Logo e o Menu e abaixo já vem o post
 - [x] Deixar o título posicionado no lado esquerdo mesmo, eventualmente posso colocá-lo no meio.
-- [ ] Nos comentários o botão publicar comentário esta "encavalado" com o conteúdo da linha de baixo
-- [ ] Colocar a legenda das fotos em itálico para diferenciar
-- [ ] Conforme te falei as fotos perderam a configuração e não estão alinhadas com o texto. Nos últimos post tive que alterar na mão para ajustar. Preciso também de mais três configuração de fotos, além da que já temos, pode ser?
+- [x] Nos comentários o botão publicar comentário esta "encavalado" com o conteúdo da linha de baixo
+- [x] Colocar a legenda das fotos em itálico para diferenciar
+- [x] Conforme te falei as fotos perderam a configuração e não estão alinhadas com o texto. Nos últimos post tive que alterar na mão para ajustar. Preciso também de mais três configuração de fotos, além da que já temos, pode ser?
 
 ## Com relação aos celulares
 
-- [ ] Vi em outros blogs que o menu fica dentro de ou menu que é identificado com três barrinhas, veja no exemplo abaixo. No nosso não consigo ver sub menus.
-- [ ] Não aparece a opção de pesquisa, se poder fazer como no exemplo acima, acho que fica bom.
+- [ x Vi em outros blogs que o menu fica dentro de ou menu que é identificado com três barrinhas, veja no exemplo abaixo. No nosso não consigo ver sub menus.
+- [ x Não aparece a opção de pesquisa, se poder fazer como no exemplo acima, acho que fica bom.
 - [ ] A navegação entre as páginas no rodapé da pagina, só vai até a  sexta. Talvez fosse melhor diminuir no site para 6 , para poder aparecer, não?
 
 ## Verificar

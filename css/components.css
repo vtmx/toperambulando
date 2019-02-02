@@ -3,14 +3,14 @@
 
 /* =pagination */
 
-.pagination .wp-pagenavi {
+.wp-pagenavi {
 	display: flex;
 	align-items: stretch;
 	margin-bottom: 32px;	
 }
 
-.pagination a,
-.pagination span {
+.wp-pagenavi a,
+.wp-pagenavi span {
 	display: block;
 	margin-right: 4px;
 	padding: 8px 16px;
@@ -18,8 +18,8 @@
 	color: #fff;
 }
 
-.pagination a:hover,
-.pagination .current {
+.wp-pagenavi a:hover,
+.wp-pagenavi .current {
 	background: var(--orange);
 }
 
@@ -52,13 +52,13 @@
 /* =media */
 
 @media(max-width: 700px) {
-	.pagination .wp-pagenavi {
+	.wp-pagenavi .wp-pagenavi {
 		display: block;
 		text-align: center;
 	}
 
-	.pagination a,
-	.pagination span {
+	.wp-pagenavi a,
+	.wp-pagenavi span {
 		display: block;
 		margin-bottom: 4px;
 	}

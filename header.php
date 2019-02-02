@@ -36,7 +36,6 @@
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/elements.css">
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/layout.css">
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/components.css">
-	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/utilities.css">
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/pages/archive.css">
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/pages/search.css">
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/pages/single.css">

@@ -2,12 +2,24 @@
 			</main>
 
 			<footer class="footer">
-				<div class="container">
-					<div class="copyright">2006 - 2019 © Todos os direitos reservados por <a href="/">Herber Terra</a></div>					
-					<div class="designer">Design por <a href="http://vitormelo.com.br/">Vitor Melo</a></div>
-					<a class="scroll-top" href="#"><i class="icon fa fa-chevron-up"></i></a>
+				<div class="widgets">
+					<div class="container widgets-container">
+						<?php if (dynamic_sidebar('Rodapé 1')): endif; ?>
+						<?php if (dynamic_sidebar('Rodapé 2')): endif; ?>
+						<?php if (dynamic_sidebar('Rodapé 3')): endif; ?>
+						<?php if (dynamic_sidebar('Rodapé 4')): endif; ?>
+					</div>
+				</div>
+				
+				<div class="disclaimer">
+					<div class="container">
+						<div class="copyright">2006 - 2019 © Todos os direitos reservados por <a href="/">Herber Terra</a></div>					
+						<div class="designer">Design por <a href="http://vitormelo.com.br/" target="_blank">Vitor Melo</a></div>
+					</div>
 				</div>
 			</footer>
+
+			<a class="scroll-top" href="#"><i class="icon fa fa-chevron-up"></i></a>
 		</div><!-- #app -->
 
 		<!-- Scripts -->

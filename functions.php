@@ -50,6 +50,39 @@ add_action('init', 'register_custom_menu');
 // -----------------------------------------------------------------------------
 if (function_exists('register_sidebar')) {
 	 register_sidebar(array(
+		'name' => 'Barra Lateral',
+		'before_widget' => '<div class="widget">',
+		'after_widget' => '</div>',
+		'before_title' => '<h2 class="widget-title">',
+		'after_title' => '</h2>',
+	));
+
+	register_sidebar( array(
+		'name' => 'Rodapé 1',
+		'before_widget' => '<div class="widget">',
+		'after_widget' => '</div>',
+		'before_title' => '<h2 class="widget-title">',
+		'after_title' => '</h2>',
+	));
+
+	register_sidebar( array(
+		'name' => 'Rodapé 2',
+		'before_widget' => '<div class="widget">',
+		'after_widget' => '</div>',
+		'before_title' => '<h2 class="widget-title">',
+		'after_title' => '</h2>',
+	));
+
+	register_sidebar( array(
+		'name' => 'Rodapé 3',
+		'before_widget' => '<div class="widget">',
+		'after_widget' => '</div>',
+		'before_title' => '<h2 class="widget-title">',
+		'after_title' => '</h2>',
+	));
+
+	register_sidebar( array(
+		'name' => 'Rodapé 4',
 		'before_widget' => '<div class="widget">',
 		'after_widget' => '</div>',
 		'before_title' => '<h2 class="widget-title">',

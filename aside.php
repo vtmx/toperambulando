@@ -1,5 +1,5 @@
 <aside class="aside">
-	<?php dynamic_sidebar(); ?>
+	<?php if (dynamic_sidebar('Barra Lateral')): endif; ?>
 </aside>
 
 

@@ -277,16 +277,16 @@
 
 /* =aside */
 
-.widget {
+.aside .widget {
 	margin-bottom: 16px;
 }
 
-.widget-title {
+.aside .widget-title {
 	margin-bottom: 8px;
 	font-size: 18px;
 }
 
-.widget .social a {
+.aside .widget .social a {
 	display: block;
 	margin-bottom: 4px;
 	padding: 16px;
@@ -294,37 +294,52 @@
 	background: #f8f8f8;
 }
 
-.widget .social a:hover {
+.aside .widget .social a:hover {
 	text-decoration: underline;
 	text-decoration: none;
 	background: var(--orange);
 	color: #fff;
 }
 
-.widget .social i {
+.aside .widget .social i {
 	margin-right: 8px;
 	font-size: 18px;
 	
 }
 
-.widget .destinos figure {
+.aside .widget .destinos figure {
 	margin-bottom: 8px;
 }
 
 /* =footer
 ------------------------------------------------------------------------------*/
 
-.footer {
+.footer .disclaimer {
 	padding: 22px 0;
-	background: var(--gray-dark);
+	background: #232323;
 	text-align: center;
-	color: white;
+	color: #fff;
 }
 
-.footer .copyright a:hover,
-.footer .designer a:hover {
+.footer .disclaimer a:hover {
 	text-decoration: underline;
-	color: white;
+	color: #fff;
+}
+
+.footer .widgets {
+	background: var(--gray-dark);
+	color: #fff;
+}
+
+.footer .widgets-container {
+	display: flex;
+	justify-content: space-between;
+	padding: 16px;
+}
+
+.footer .widget-title {
+	margin: 0 0 8px;
+	font-size: 18px;
 }
 
 /* =media
