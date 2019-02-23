@@ -12,6 +12,10 @@
 
 	<!-- Favicons -->
 	<link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/img/favicons/favicon.ico">
+	<link rel="icon" type="image/png" sizes="192x192"  href="<?php bloginfo('template_url'); ?>/img/favicons//android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="<?php bloginfo('template_url'); ?>/img/favicons//favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="<?php bloginfo('template_url'); ?>/img/favicons//favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="<?php bloginfo('template_url'); ?>/img/favicons//favicon-16x16.png">
 	<link rel="apple-touch-icon" sizes="57x57" href="<?php bloginfo('template_url'); ?>/img/favicons/apple-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="<?php bloginfo('template_url'); ?>/img/favicons//apple-icon-60x60.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="<?php bloginfo('template_url'); ?>/img/favicons//apple-icon-72x72.png">
@@ -21,27 +25,32 @@
 	<link rel="apple-touch-icon" sizes="144x144" href="<?php bloginfo('template_url'); ?>/img/favicons//apple-icon-144x144.png">
 	<link rel="apple-touch-icon" sizes="152x152" href="<?php bloginfo('template_url'); ?>/img/favicons//apple-icon-152x152.png">
 	<link rel="apple-touch-icon" sizes="180x180" href="<?php bloginfo('template_url'); ?>/img/favicons//apple-icon-180x180.png">
-	<link rel="icon" type="image/png" sizes="192x192"  href="<?php bloginfo('template_url'); ?>/img/favicons//android-icon-192x192.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="<?php bloginfo('template_url'); ?>/img/favicons//favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="<?php bloginfo('template_url'); ?>/img/favicons//favicon-96x96.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="<?php bloginfo('template_url'); ?>/img/favicons//favicon-16x16.png">
-	<link rel="manifest" href="/manifest.json">
 	<meta name="msapplication-TileColor" content="#ffffff">
 	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
 
 	<!-- Styles -->
-	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/variables.css">
-	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/normalize.css">
-	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/elements.css">
-	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/layout.css">
-	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/components.css">
+	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/abstracts/variables.css">
+	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/base/elements.css">
+	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/abstracts/emmet.css">
+
+	<!-- Layout -->
+	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/layout/header.css">
+	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/layout/container.css">
+	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/layout/aside.css">
+	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/layout/footer.css">
+	
+	<!-- Components -->
+	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/components/pagination.css">
+
+	<!-- Pages -->
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/pages/archive.css">
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/pages/search.css">
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/pages/single.css">
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/pages/page.css">
 
-	<!-- Styles Plugins -->
+	<!-- Vendors -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.11/css/lightgallery.min.css">
 
 	<!-- Fonts -->
@@ -63,12 +72,11 @@
 </head>
 
 <body <?php if (is_home() || is_search()) { body_class('archive'); } else { body_class(); } ?>>
+	<div id="app">
+		<!--[if lt IE 8]>
+			<div class="p16 tac">Você está usando um navegador <strong>desatualizado</strong>. <a href="http://outdatedbrowser.com/pt">Atualize seu navegador</a> para ter uma melhor experiência de navegação.</div>
+		<![endif]-->
 
-	<!--[if lt IE 8]>
-		<p class="browsehappy">Você está usando um navegador <strong>desatualizado</strong>. <a href="http://browsehappy.com/">Atualize seu navegador</a> para ter uma melhor experiência de navegação.</p>
-	<![endif]-->
-
-		<div id="app">
 		<header class="header">
 			<nav class="nav nav-top">
 				<div class="container">

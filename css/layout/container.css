@@ -1,0 +1,40 @@
+/* =container
+------------------------------------------------------------------------------*/
+
+.container {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 0 16px;
+}
+
+.main > .container {
+	display: grid;
+	grid-template-columns: auto 362px; /* booking */
+	/* grid-template-columns: auto 332px; */
+	grid-column-gap: 32px;
+	margin: 0 auto;
+}
+
+.main > .container {
+	padding: 16px 16px 0;
+}
+
+.single .main > .container {
+	max-width: none;
+}
+
+/* =media
+------------------------------------------------------------------------------*/
+
+@media(max-width: 1280px) {
+	.main > .container {
+		grid-template-columns: auto;
+	}
+}
+
+@media(max-width: 1280px) {
+	.main .container {
+		display: block;
+		max-width: 700px;
+	}
+}

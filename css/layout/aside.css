@@ -1,0 +1,50 @@
+/* =aside */
+
+.aside .widget {
+	margin-bottom: 16px;
+}
+
+.aside .widget-title {
+	margin-bottom: 8px;
+	font-size: 18px;
+}
+
+.aside .widget .social a {
+	display: block;
+	margin-bottom: 4px;
+	padding: 16px;
+	font-size: 14px;
+	background: #f8f8f8;
+}
+
+.aside .widget .social a:hover {
+	text-decoration: underline;
+	text-decoration: none;
+	background: var(--orange);
+	color: #fff;
+}
+
+.aside .widget .social i {
+	margin-right: 8px;
+	font-size: 18px;
+	
+}
+
+.aside .widget .destinos figure {
+	margin-bottom: 8px;
+}
+
+/* =media
+------------------------------------------------------------------------------*/
+
+@media(max-width: 1280px) {
+	.aside {
+		display: none;
+	}
+}
+
+@media(max-width: 1280px) {
+	.aside {
+		display: none;
+	}
+}

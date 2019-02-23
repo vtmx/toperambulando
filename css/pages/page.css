@@ -1,18 +1,42 @@
 .page-title {
-	margin: 0 0 32px;
+	margin: 0 0 16px;
 }
 
 .page-content {
 	font-size: 16px;
 }
 
+.page-content h2:first-child {
+	margin-top: 0;
+}
+
+.page-content h2 {
+	margin-top: 48px;
+	font-size: 24px;
+}
+
 .page-content p {
 	margin: 0 0 32px;
+}
+
+.page-content ul {
+	padding-left: 16px;
+}
+
+.page-content li {
+	list-style: disc;
+}
+
+.page-content .mb16 li {
+	margin-bottom: 16px;
 }
 
 .page-content a:hover {
 	text-decoration: underline;
 }
+
+
+/* contact */
 
 .page .wpcf7 {
 	margin-bottom: 32px;

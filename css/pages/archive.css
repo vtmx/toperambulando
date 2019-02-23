@@ -106,6 +106,7 @@
 .archive .post-summary p {
 	margin: 0 0 16px;
 	line-height: 1.8;
+	text-align: justify;
 }
 
 .archive .post-summary p a:hover {
@@ -130,7 +131,12 @@
 /* =media */
 
 @media(max-width: 720px) {
+	.archive .posts {
+		margin-bottom: 24px;
+	}
+
 	.archive .post {
+		padding: 24px 0;
 		text-align: center;
 	}
 
@@ -162,9 +168,18 @@
 		width: 100%;
 	}
 
+	.archive .post-summary p {
+		margin: 0;
+		font-size: 16px;
+	}
+
 	.archive .post-content .post-image,
 	.archive .post-content-reverse .post-image {
 		margin: 0 0 16px;
+	}
+
+	.archive .post-image img {
+		min-width: 100%;
 	}
 
 	.archive .post-summary p {
@@ -172,6 +187,7 @@
 	}
 
 	.archive .post-readmore {
+		display: none;
 		padding: 16px;
 		text-transform: uppercase;
 	}
