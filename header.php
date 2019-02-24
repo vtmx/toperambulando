@@ -41,6 +41,7 @@
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/layout/footer.css">
 	
 	<!-- Components -->
+	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/components/slider.css">
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/components/pagination.css">
 
 	<!-- Pages -->
@@ -51,6 +52,7 @@
 
 	<!-- Vendors -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.11/css/lightgallery.min.css">
 
 	<!-- Fonts -->
@@ -117,6 +119,47 @@
 				</div>
 			</nav>	
 		</header>
+
+		<?php if( is_front_page() && !is_paged() ): ?>
+			<?php if( have_rows('slider', 'options') ):	?>
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<?php 
+							while( have_rows('slider', 'options') ): the_row();
+								// vars
+								$image = get_sub_field('slide-image');
+								$link = get_sub_field('slide-link');
+								$place = get_sub_field('slide-place');
+								$title = get_sub_field('slide-title');
+						?>
+						
+								<div class="swiper-slide" style="background-image:url(<?php echo $image; ?>)">
+									<a class="swiper-link" href="<?php echo $link; ?>">
+										<div class="swiper-text">
+											<div class="swiper-place"><?php echo $place; ?></div>
+											<div class="swiper-title"><?php echo $title; ?></div>
+										</div>										
+									</a>
+								</div>
+						<?php endwhile; ?>
+					</div>
+
+					<div class="swiper-button-next swiper-button-white"></div>
+					<div class="swiper-button-prev swiper-button-white"></div>
+				</div>
+			<?php endif; ?>
+		<?php endif; ?>
+		
+		<!-- <div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">Slide 1</div>
+				<div class="swiper-slide">Slide 2</div>
+				<div class="swiper-slide">Slide 3</div>
+			</div>
+
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
+		</div> -->
 
 		<main class="main">
 			<div class="container">
