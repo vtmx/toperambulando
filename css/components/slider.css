@@ -7,7 +7,10 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: #1f1f1f;
+	background-color: #1f1f1f;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .swiper-place, .swiper-title {
