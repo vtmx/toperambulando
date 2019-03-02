@@ -1,4 +1,6 @@
 .swiper-container, .swiper-link {
+	display: flex;
+	align-items: center;
 	width: 100%;
 	height: 400px;
 }
@@ -18,8 +20,8 @@
 }
 
 .swiper-text {
-	max-width: 1280px;
-	margin: 160px auto 0;
+	min-width: 1280px;
+	margin: 0 auto;
 	padding: 0 32px;
 }
 

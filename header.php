@@ -128,27 +128,18 @@
 							while( have_rows('slider', 'options') ): the_row();
 								// vars
 								$image = get_sub_field('slide-image');
-								$link = get_sub_field('slide-link');
 								$category = get_sub_field('slide-category');
+								$link = get_sub_field('slide-link');
 								$link_url = $link['url'];
 								$link_title = $link['title'];
-								$place = get_sub_field('slide-place');
-								$title = get_sub_field('slide-title');
 						?>
-
-					
 								<div class="swiper-slide" style="background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), url(<?php echo $image; ?>)">
 									<a class="swiper-link" href="<?php echo $link_url; ?>">
 										<div class="swiper-text">
-											<div class="swiper-place"><?php //echo $place; ?> <?php echo $category->name; ?></div>
+											<div class="swiper-place"><?php echo $category->name; ?></div>
 											<div class="swiper-title"><?php echo $link_title; ?></div>
 										</div>										
 									</a>
-
-
-
-
-
 								</div>
 						<?php endwhile; ?>
 					</div>
