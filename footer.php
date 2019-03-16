@@ -20,6 +20,8 @@
 			</footer>
 
 			<a class="scroll-top" href="#"><i class="icon fa fa-chevron-up"></i></a>
+
+			<div class="modal"></div>
 		</div><!-- #app -->
 
 		<!-- Scripts -->

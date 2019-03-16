@@ -27,6 +27,19 @@
 - [x] Não aparece a opção de pesquisa, se poder fazer como no exemplo acima, acho que fica bom
 - [ ] A navegação entre as páginas no rodapé da pagina, só vai até a  sexta. Talvez fosse melhor diminuir no site para 6 , para poder aparecer, não?
 
+## Novas alterações
+
+- [ ] O Slider ficou ótimo, a tela cheia também. Gosto muito do layout do site https://www.terraadentro.com/ é bem leve. Se não for dar muito trabalho o que acha de em vez de um post por linha colocarmos dois. É que antes com poucos posts até valia a pena, mais agora com muitos seria melhor fazer uma dupla, inclusive porque como esta hoje, o resumo fica muito grande, mesmo que isso possa reduzir um pouco o widgets. O que acha?
+- [ ] Os posts com esse novo editor eu consigo mexer colocando blocos de títulos e imagens em qualquer lugar. E no caso da página principal, tem como eu incluir? Por exemplo, se eu quiser colocar um bloco com titulo e uma sequência de 3 ou 4 posts mais relevantes logo abaixo do slider, é possível? É possível essa área ser opcional?
+- [ ] No topo da página, onde tem o espaço para publicidade, troque o marrom por preto, é que posso não tem uma publicidade em um determinado momento.
+- [ ] Os posts, eu tinha pedido para você não colocar os widgets, mais achei que a página ficou meio pelada, se importa de retornar com o widgets?
+- [ ] Quanto a parte de layout acho que é só isso. Quanto aos posts você viu com relação a formatação das fotos se conseguimos coloca-las além das individuais colocar mais esse dois padrões? 
+- [ ] Aproveitando, no celular, o menu está ok, precisamos só colocar a lupa de pesquisa, sugiro do lado esquerdo com o logo no meio, é possível? Também é possivel aparecer o slider?
+Estou criando o lightbox para quando clicar na lupa fazer a pesquisa. Assim, o slider é até possível aparecer, mas eu pessoalmente não recomendo muito, pois as imagens que serão postas no slides são bem grandes, o ideal é 1920x400px dá uma média de quase 450kb por imagem o que pode demorar bastante ao abrir no celular.
+- [ ] A Página de contato não está aparecendo no site novo.
+Essa vou ativar quando implementar, junto com os plugins de estatísticas e o de assinantes.
+- [ ] Esqueci de avisar. Eu estava verificando sobre aquele plugin de categoria de imagens que utilizávamos, como você já havia organizado a maioria fui verificar se talvez não fosse melhor continuar com ele, o problema é que os desenvolvedores simplesmente pararam de dar suporte, agora eles trabalham com assinatura anual, que ao meu ver sai bem cara por sinal dá uma olhada. Achei uma tremenda sacanagem pois na época que compramos, eu li o termo e única coisa que eles colocaram como um ano era o suporte, não envolvia atualizações.
+
 ## Verificar
 
 ## Tamanho das imagens

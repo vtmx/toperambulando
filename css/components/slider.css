@@ -15,6 +15,27 @@
 	background-size: cover;
 }
 
+.swiper-button-prev,
+.swiper-button-next {
+	width: 60px !important;
+	height: 60px !important;
+	margin-top: -33px !important;
+	transition: all .1s;
+}
+
+.swiper-button-prev {
+	left: 0 !important;
+}
+
+.swiper-button-next {
+	right: 0 !important;
+}
+
+.swiper-button-prev:active,
+.swiper-button-next:active {
+	transform: scale(.9);	
+}
+
 .swiper-place, .swiper-title {
 	color: #fff;
 }

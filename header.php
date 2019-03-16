@@ -41,6 +41,7 @@
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/layout/footer.css">
 	
 	<!-- Components -->
+	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/components/modal.css">
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/components/slider.css">
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/components/pagination.css">
 
@@ -92,8 +93,9 @@
 					</div>
 
 					<form role="search" method="get" id="searchform" class="search" action="<?php bloginfo('url'); ?>">
-						<input class="text" type="text" id="searchtext" value="" name="s" class="s" placeholder="<?php if( get_search_query() ) { echo get_search_query(); } else { echo 'Pesquisar'; } ?>">
-						<button class="button" type="submit" id="searchsubmit"><i class="icon fa fa-search"></i></button>
+						<input class="search-text" type="text" id="searchtext" value="" name="s" class="s" placeholder="<?php if( get_search_query() ) { echo get_search_query(); } else { echo 'Pesquisar'; } ?>">
+						<button class="search-button" type="submit" id="searchsubmit"><i class="icon fa fa-search"></i></button>
+						<button class="search-toggle"><i class="icon fa fa-search"></i></button>
 					</form>
 				</div>
 			</nav>
@@ -104,18 +106,14 @@
 						<img class="logo-img" src="<?php bloginfo('template_directory'); ?>/img/logo.svg" alt="Logo do site TôPerambulando">
 					</a>
 
-					<a class="adsense" href="#">
-
-					</a>
+					<a class="adsense" href="#"></a>
 				</div>
 			</nav>
 
 			<nav class="nav nav-bottom">
 				<div class="container">
 					<?php wp_nav_menu( array( 'menu' => 'Menu' ) ); ?>
-					<button class="menu-toggle" data-target="nav-bottom-menu" aria-label="menu" aria-expanded="false">
-						<i class="icon fas fa-bars"></i>
-					</button>
+					<button class="menu-toggle"><i class="icon fas fa-bars"></i></button>
 				</div>
 			</nav>	
 		</header>
