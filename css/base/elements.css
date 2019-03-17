@@ -138,6 +138,7 @@ button:hover,
 
 [type='text'],
 [type='email'],
+[type='search'],
 textarea,
 select {
 	border: 1px solid #ddd;
@@ -148,6 +149,7 @@ select {
 
 [type='text']:focus,
 [type='email']:focus,
+[type='search']:focus,
 textarea:focus,
 select:focus {
 	outline: none;

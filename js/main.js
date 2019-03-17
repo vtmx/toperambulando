@@ -7,6 +7,6 @@
 		plugin.sticky('.nav-bottom')
 	} else {
 		plugin.menuToggle('.menu-toggle', '.menu')
-		plugin.searchToggle('.search-toggle', '.search-text', '.modal')
+		plugin.searchToggle('.search-toggle', '.search', '.search-text',  '.modal')
 	}
 })();

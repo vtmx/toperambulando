@@ -23,10 +23,11 @@ class Plugin {
 		})
 	}
 
-	searchToggle(el, el1, el2) {
+	searchToggle(el, el1, el2, el3) {
 		let button = document.querySelector(el)
 		let form = document.querySelector(el1)
-		let modal = document.querySelector(el2)
+		let text = document.querySelector(el2)
+		let modal = document.querySelector(el3)
 
 		button.addEventListener('click', searchToggle)
 		modal.addEventListener('click', searchToggle)
@@ -34,8 +35,8 @@ class Plugin {
 		function searchToggle(e) {
 			e.preventDefault()
 			modal.classList.toggle('modal-open')
-			form.classList.toggle('search-text-active')
-			form.focus()
+			form.classList.toggle('search-active')
+			text.focus()
 		}
 	}
 }

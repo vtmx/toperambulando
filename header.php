@@ -93,9 +93,8 @@
 					</div>
 
 					<form role="search" method="get" id="searchform" class="search" action="<?php bloginfo('url'); ?>">
-						<input class="search-text" type="text" id="searchtext" value="" name="s" class="s" placeholder="<?php if( get_search_query() ) { echo get_search_query(); } else { echo 'Pesquisar'; } ?>">
-						<button class="search-button" type="submit" id="searchsubmit"><i class="icon fa fa-search"></i></button>
-						<button class="search-toggle"><i class="icon fa fa-search"></i></button>
+						<input class="search-text" type="search" id="searchtext" value="" name="s" class="s" placeholder="<?php if( get_search_query() ) { echo get_search_query(); } else { echo 'Pesquisar'; } ?>">
+						<button class="search-button" type="submit" id="searchsubmit"><i class="icon fa fa-search"></i></button>						
 					</form>
 				</div>
 			</nav>
@@ -113,9 +112,13 @@
 			<nav class="nav nav-bottom">
 				<div class="container">
 					<?php wp_nav_menu( array( 'menu' => 'Menu' ) ); ?>
-					<button class="menu-toggle"><i class="icon fas fa-bars"></i></button>
 				</div>
-			</nav>	
+			</nav>
+
+			<nav class="nav nav-toggle">
+				<button class="search-toggle"><i class="icon fa fa-search"></i></button>
+				<button class="menu-toggle"><i class="icon fas fa-bars"></i></button>
+			</nav>
 		</header>
 
 		<?php if( is_front_page() && !is_paged() ): ?>
