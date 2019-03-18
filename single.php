@@ -59,7 +59,7 @@
 				$args=array(
 					'tag__in' => $tag_ids,
 					'post__not_in' => array($post->ID),
-					'posts_per_page'=> 3, // Number of related posts to display.
+					'posts_per_page'=> 4, // Number of related posts to display.
 					'orderby'=> 'date',
 					'order'=> 'ASC',
 					'caller_get_posts'=> 1
