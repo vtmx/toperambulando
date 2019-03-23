@@ -15,7 +15,7 @@ class Plugin {
 
 	menuToggle(el, el1) {
 		let button = document.querySelector(el)
-		let menu = document.querySelector(el1)
+		let menu   = document.querySelector(el1)
 
 		button.addEventListener('click', function (e) {
 			e.preventDefault()
@@ -25,9 +25,9 @@ class Plugin {
 
 	searchToggle(el, el1, el2, el3) {
 		let button = document.querySelector(el)
-		let form = document.querySelector(el1)
-		let text = document.querySelector(el2)
-		let modal = document.querySelector(el3)
+		let form   = document.querySelector(el1)
+		let text   = document.querySelector(el2)
+		let modal  = document.querySelector(el3)
 
 		button.addEventListener('click', searchToggle)
 		modal.addEventListener('click', searchToggle)

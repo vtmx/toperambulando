@@ -40,6 +40,14 @@ Estou criando o lightbox para quando clicar na lupa fazer a pesquisa. Assim, o s
 Essa vou ativar quando implementar, junto com os plugins de estatísticas e o de assinantes.
 - [ ] Esqueci de avisar. Eu estava verificando sobre aquele plugin de categoria de imagens que utilizávamos, como você já havia organizado a maioria fui verificar se talvez não fosse melhor continuar com ele, o problema é que os desenvolvedores simplesmente pararam de dar suporte, agora eles trabalham com assinatura anual, que ao meu ver sai bem cara por sinal dá uma olhada. Achei uma tremenda sacanagem pois na época que compramos, eu li o termo e única coisa que eles colocaram como um ano era o suporte, não envolvia atualizações.
 
+1) Onde coloco o código do anuncio na parte de cima da página onde fica o logo, queria testar, não está disponível?
+2) Colocação de dois posts por linha na página principal, sendo primeiro a foto, e abaixo o título. Não se preocupar com o texto, eu posso diminuir.
+3) Nos posts, justificar os textos
+4) Com relação aos novos layout que pedi para as fotos não entendi bem a sua resposta, não é possível?
+5) Com relação as fotos que não estão aparecendo depois da migração, devo coloca-las novamente para acertar?
+6) No site novo, as mídias estão misturadas, você disse que devemos continuar utilizando o plugin que já usávamos sendo que devo criar as pasta e ir acomodando aos fotos aos poucos. É isso? 	Como crio as pastas?
+7) No celular acho que o único acerto é a navegação, tem como colocar a quantidade de paginas existentes? Ou pelo menos ter a opção de ir para a última página sem ir navegando uma a uma.
+
 ## Verificar
 
 ## Tamanho das imagens
