@@ -1,5 +1,5 @@
 <aside class="aside">
-	<?php if (dynamic_sidebar('Barra Lateral')): endif; ?>
+	<?php dynamic_sidebar('sidebar_archive') ?>
 </aside>
 
 

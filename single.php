@@ -90,5 +90,8 @@
 	<?php comments_template(); ?>
 </div>
 
-<?php get_template_part('aside'); ?>
+<aside class="aside">
+	<?php dynamic_sidebar('sidebar_post'); ?>
+</aside>
+
 <?php get_template_part('footer'); ?>

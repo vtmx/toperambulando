@@ -5,8 +5,9 @@
 	/* display: block;
 	max-width: 732px; */
 	display: grid;
-	grid-template-columns: auto 362px;
+	grid-template-columns: 720px 330px;
 	grid-column-gap: 32px;
+	justify-content: center;
 	max-width: 1240px;
 	padding: 0 16px;
 	animation: 1s fade-in-up;
@@ -372,12 +373,6 @@
 .comment-form-url,
 .comments-list .says {
     display: none;
-}
-
-/* =aside */
-
-.single .aside {
-	/* display: none; */
 }
 
 @media(max-width: 1280px) {
