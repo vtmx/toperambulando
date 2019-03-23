@@ -24,7 +24,7 @@ if ( function_exists( 'register_sidebar' ) ) {
 	 register_sidebar( array(
 		'id' => 'widget_header',
 		'name' => 'Anúncio Cabeçalho',
-		'before_widget' => '<div class="header-adsense">',
+		'before_widget' => '<div class="adsense">',
 		'after_widget' => '</div>',
 		'before_title' => '',
 		'after_title' => '',
