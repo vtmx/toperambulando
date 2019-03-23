@@ -1,11 +1,19 @@
 /* =aside */
 
+.archive .aside {
+	margin-top: 16px;
+}
+
+.single .aside {
+	margin-top: 32px;
+}
+
 .aside .widget {
-	margin-bottom: 16px;
+	margin-bottom: 32px;
 }
 
 .aside .widget-title {
-	margin-bottom: 8px;
+	margin: 0 0 8px;
 	font: bold 18px Roboto, 'Segoe UI', sans-serif;
 }
 

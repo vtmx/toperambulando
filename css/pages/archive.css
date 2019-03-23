@@ -11,7 +11,8 @@
 .archive .post {
 	position: relative;
 	max-width: calc(50% - 16px);
-	padding: 24px 0 32px 0;
+	padding: 18px 0 32px 0;
+	margin-bottom: 4px;
 	border-bottom: 1px solid #eee;
 }
 
@@ -151,8 +152,16 @@
 /* =media */
 
 @media(max-width: 1280px) {
+	.archive .post {
+		overflow: hidden;
+	}
+
 	.archive .post-image {
 		height: 200px;
+	}
+
+	.archive .post-categories {
+		display: none;
 	}
 }
 
@@ -198,38 +207,31 @@
 	}
 
 	.archive .post-title,
-	.archive .post-subtitle,
-	.archive .post-categories {
+	.archive .post-subtitle {
 		overflow: auto;
 		height: auto;
 	}
 
-	.archive .post-title,
-	.archive .post-subtitle {
-		margin-bottom: 0;
-	}
-
 	.archive .post-title {
-		margin-bottom: 4px;
+		margin-bottom: 8px;
 	}
 
 	.archive .post-title a {
 		display: block;
 	}
 
+	.archive .post-subtitle {
+		margin-bottom: 0;
+	}
+
 	.archive .post-meta {
-		margin: 16px 0 16px;
+		margin: 8px 0;
 		text-align: center;
 	}
 
-	.archive .post-date,
-	.archive .post-categories {
-		display: block;
-		
-	}
-
 	.archive .post-date {
-		margin-bottom: 8px;
+		display: block;
+		margin: 0;		
 	}
 
 	.archive .post-readmore {
