@@ -17,7 +17,6 @@
 				<div class="post-meta">
 					<div class="post-date"><i class="fas fa-calendar"></i> <?php echo get_the_date('d/m/Y'); ?></div>
 					<div class="post-categories"><i class="fas fa-folder"></i> Categorias: <?php the_category(' '); ?></div>					
-					<!-- <div class="post-comments"><?php comments_popup_link(('Sem comentário'), ('1 comentário'), ('% comentários')); ?></div> -->
 				</div>
 
 				<div class="post-summary">
