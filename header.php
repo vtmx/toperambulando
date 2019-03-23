@@ -105,7 +105,9 @@
 						<img class="logo-img" src="<?php bloginfo('template_directory'); ?>/img/logo.svg" alt="Logo do site TôPerambulando">
 					</a>
 
-					<a class="adsense" href="#"></a>
+					<?php if ( is_active_sidebar('ads_cabecalho') ): ?>
+						<?php dynamic_sidebar('ads_cabecalho'); ?>
+					<?php endif; ?>
 				</div>
 			</nav>
 

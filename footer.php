@@ -2,14 +2,16 @@
 			</main>
 
 			<footer class="footer">
-				<div class="widgets">
-					<div class="container widgets-container">
-						<?php if (dynamic_sidebar('Rodapé 1')): endif; ?>
-						<?php if (dynamic_sidebar('Rodapé 2')): endif; ?>
-						<?php if (dynamic_sidebar('Rodapé 3')): endif; ?>
-						<?php if (dynamic_sidebar('Rodapé 4')): endif; ?>
+				<?php if ( is_active_sidebar('widget_footer1') || is_active_sidebar('widget_footer2') || is_active_sidebar('widget_footer3') || is_active_sidebar('widget_footer4') ): ?>
+					<div class="widgets">
+						<div class="container widgets-container">
+							<?php dynamic_sidebar('widget_footer1') ?>
+							<?php dynamic_sidebar('widget_footer2') ?>
+							<?php dynamic_sidebar('widget_footer3') ?>
+							<?php dynamic_sidebar('widget_footer4') ?>
+						</div>
 					</div>
-				</div>
+				<?php endif; ?>
 				
 				<div class="disclaimer">
 					<div class="container">

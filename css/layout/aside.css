@@ -6,10 +6,10 @@
 
 .aside .widget-title {
 	margin-bottom: 8px;
-	font-size: 18px;
+	font: bold 18px Roboto, 'Segoe UI', sans-serif;
 }
 
-.aside .widget .social a {
+.aside .widget li a {
 	display: block;
 	margin-bottom: 4px;
 	padding: 16px;
@@ -17,7 +17,7 @@
 	background: #f8f8f8;
 }
 
-.aside .widget .social a:hover {
+.aside .widget li a:hover {
 	text-decoration: underline;
 	text-decoration: none;
 	background: var(--orange);
@@ -30,7 +30,7 @@
 	
 }
 
-.aside .widget .destinos figure {
+.aside .widget figure {
 	margin-bottom: 8px;
 }
 

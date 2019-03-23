@@ -2,6 +2,10 @@
 	<div class="posts">
 		<?php while (have_posts()) : the_post() ?>
 			<article class="post">
+				<div class="post-image">
+					<a class="post-image-link" href="<?php the_permalink() ?>"><?php the_post_thumbnail('large'); ?></a>
+				</div>
+
 				<div class="post-header">
 					<h2 class="post-title"><a class="post-link" href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
 
@@ -16,23 +20,15 @@
 					<!-- <div class="post-comments"><?php comments_popup_link(('Sem comentário'), ('1 comentário'), ('% comentários')); ?></div> -->
 				</div>
 
-				<?php if (get_field('featured-align') == 'right'): ?><div class="post-content-reverse"><?php else: ?><div class="post-content"><?php endif; ?>
-					<div class="post-image">
-						<a class="post-image-link" href="<?php the_permalink() ?>"><?php the_post_thumbnail('large'); ?></a>
-					</div>
-					
-					<div class="post-summary">
-						<?php if (get_field('summary')): ?>
-							<?php the_field('summary'); ?>
-						<?php else: ?>
-							<?php the_excerpt(); ?>
-						<?php endif; ?>
-
-						<a class="button post-readmore" href="<?php the_permalink() ?>">Leia mais</a>
-					</div>
+				<div class="post-summary">
+					<?php if (get_field('summary')): ?>
+						<?php the_field('summary'); ?>
+					<?php else: ?>
+						<?php the_excerpt(); ?>
+					<?php endif; ?>
 				</div>
 
-				<!-- <div class="post-tags"><i class="fas fa-tags"></i> Tags: <?php the_tags(''); ?></div> -->
+				<a class="button post-readmore" href="<?php the_permalink() ?>">Leia mais</a>
 			</article>
 		<?php endwhile; ?>
 	</div>

@@ -374,12 +374,6 @@
     display: none;
 }
 
-/* =aside */
-
-.single .aside {
-	/* display: none; */
-}
-
 @media(max-width: 1280px) {
 	.single .main .container {
 		display: block;
