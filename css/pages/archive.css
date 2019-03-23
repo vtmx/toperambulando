@@ -2,19 +2,20 @@
 ------------------------------------------------------------------------------*/
 
 .archive .posts {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 	margin-bottom: 32px;
 }
 
 .archive .post {
+	max-width: calc(50% - 16px);
 	padding: 24px 0 32px 0;
 	border-bottom: 1px solid #eee;
 }
 
-.archive .post:first-child {
-	padding-top: 0;
-}
-
-.archive .post:last-child {
+.archive .post:nth-child(9),
+.archive .post:nth-child(10) {
 	padding-bottom: 0;
 	border-bottom: none;
 }
@@ -22,6 +23,12 @@
 .archive .wp-pagenavi {
 	padding-top: 32px;
 	border-top: 1px solid #eee;
+}
+
+.archive .post-image {
+	overflow: hidden;
+	margin-bottom: 16px;
+	height: 240px;
 }
 
 /* post-header */
@@ -33,8 +40,10 @@
 }
 
 .archive .post-title {
+	overflow: hidden;
+	height: 60px;
 	padding: 0;
-	font-size: 30px;
+	font-size: 24px;
 	line-height: 1.2;
 }
 
@@ -47,6 +56,8 @@
 }
 
 .archive .post-subtitle {
+	overflow: hidden;
+	height: 50px;
 	font-size: 18px;
 	font-weight: normal;
 	color: #777;
@@ -73,6 +84,10 @@
 	margin-right: 8px;
 }
 
+.archive .post-date {
+	margin-bottom: 8px;
+}
+
 .archive .post-categories a {
 	margin-right: 2px;
 	border-radius: 3px;
@@ -80,7 +95,7 @@
 
 /* =post-content */
 
-.archive .post-content,
+/* .archive .post-content,
 .archive .post-content-reverse {
 	display: flex;
 	align-items: flex-start;
@@ -101,7 +116,7 @@
 
 .archive .post-content-reverse .post-image {
 	margin-left: 32px;
-}
+} */
 
 .archive .post-summary p {
 	margin: 0 0 16px;
