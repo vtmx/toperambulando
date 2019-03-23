@@ -8,6 +8,7 @@
 }
 
 .archive .post {
+	overflow: hidden;
 	position: relative;
 	max-width: calc(50% - 16px);
 	padding: 18px 0 32px 0;
@@ -108,7 +109,7 @@
 
 .archive .post-summary {
 	position: relative;
-	height: 270px;
+	height: 192px;
 	line-height: 1.8;
 	text-align: justify;
 }
@@ -152,10 +153,6 @@
 /* =media */
 
 @media(max-width: 1280px) {
-	.archive .post {
-		overflow: hidden;
-	}
-
 	.archive .post-image {
 		height: 200px;
 	}
