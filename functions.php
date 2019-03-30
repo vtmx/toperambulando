@@ -74,15 +74,6 @@ if ( function_exists( 'register_sidebar' ) ) {
 		'before_title' => '<h2 class="widget-title">',
 		'after_title' => '</h2>',
 	) );
-
-	register_sidebar( array(
-		'id' => 'widget_footer4',
-		'name' => 'Rodapé 4',
-		'before_widget' => '<div class="widget">',
-		'after_widget' => '</div>',
-		'before_title' => '<h2 class="widget-title">',
-		'after_title' => '</h2>',
-	) );
 }
 
 // Comments
