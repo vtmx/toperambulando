@@ -13,8 +13,16 @@
 }
 
 .aside .widget-title {
-	margin: 0 0 8px;
+	margin: 0;
+	padding: 16px;
 	font: bold 18px Roboto, 'Segoe UI', sans-serif;
+	text-transform: uppercase;
+	background: var(--green);
+	color: #fff;
+}
+
+.aside .widget ul {
+	margin: 0;
 }
 
 .aside .widget li a {
@@ -40,6 +48,29 @@
 
 .aside .widget figure {
 	margin-bottom: 8px;
+}
+
+/* Plugin */
+
+.aside .wpp-list li {
+	padding: 16px 0 16px;
+	border-bottom: 1px solid #eee;
+}
+
+.aside .widget .wpp-list a {
+	background: none;
+	padding: 0;
+	color: var(--gray-dark);
+}
+
+.aside .widget .wpp-list a:hover,
+.aside .wpp-list .current a {
+	background: transparent;
+	color: var(--orange);
+}
+
+.aside .wpp-list .wpp-thumbnail {
+	margin-right: 8px;
 }
 
 /* =media
