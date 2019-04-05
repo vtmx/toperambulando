@@ -54,7 +54,8 @@
 
 .aside .wpp-list li {
 	padding: 16px 0 16px;
-	border-bottom: 1px solid #eee;
+	border-bottom: 1px solid var(--gray-light);
+	font-weight: bold;
 }
 
 .aside .widget .wpp-list a {

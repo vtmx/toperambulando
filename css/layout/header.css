@@ -35,7 +35,6 @@
 .nav-top .search {
 	display: flex;
 	position: relative;
-	margin-left: 16px;
 }
 
 .nav-top .search-text,
@@ -48,6 +47,8 @@
 	width: 200px;	
 	color: var(--gray-dark);
 	border-color: #fff;
+	border-width: 1px;
+	border-radius: 0;
 }
 
 .nav-top .search-text:focus {

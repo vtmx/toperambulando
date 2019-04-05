@@ -141,7 +141,8 @@ button:hover,
 [type='search'],
 textarea,
 select {
-	border: 1px solid #ddd;
+	border: 2px solid #ddd;
+	border-radius: 3px;
 	background: #fff;
 	padding: 8px;
 	transition: border-color .2s ease-in-out, box-shadow .2s ease-in-out;

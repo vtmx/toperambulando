@@ -8,6 +8,10 @@
 
 				<div class="post-header">
 					<h2 class="post-title"><a class="post-link" href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
+					
+					<?php if (get_field('subtitle')): ?>
+						<h3 class="post-subtitle"><?php the_field('subtitle'); ?></h3>
+					<?php endif; ?>
 				</div>
 
 				<div class="post-meta">

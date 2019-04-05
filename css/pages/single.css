@@ -237,7 +237,7 @@
 
 .post-related .title {
 	margin: 16px 0 24px 0;
-	font-size: 24px;
+	font: bold 24px Roboto, 'Segoe UI', sans-serif;
 	text-align: center;
 }
 
@@ -333,21 +333,22 @@
 /* comments list */
 
 .comments-list {
-	margin-bottom: 32px;
-	padding-top: 32px;
+	margin-bottom: 0;
 	border-top: 1px solid var(--gray-light);
 }
 
-.comments-list li {
-	margin-bottom: 32px;
+.comments-list .comment {
+	padding: 32px 0;
+	border-bottom: 1px solid var(--gray-light);
 }
 
-.comments-list li:last-child {
-	margin-bottom: 0;
+.comments-list .comment:last-child {
+	padding: 32px 0 12px;
+	border-bottom: none;
 }
 
 .comments-list p {
-	margin: 0 0 24px 0;
+	margin: 0;
 }
 
 .comment-meta {
