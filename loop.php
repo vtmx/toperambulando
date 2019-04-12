@@ -19,14 +19,10 @@
 				</div>
 
 				<div class="post-summary">
-					<?php if (get_field('summary')): ?>
-						<?php the_field('summary'); ?>
-					<?php else: ?>
-						<?php the_excerpt(); ?>
-					<?php endif; ?>
+					<?php the_excerpt(); ?>
 				</div>
 
-				<a class="button post-readmore" href="<?php the_permalink() ?>">Leia mais</a>
+				<a class="button post-readmore" href="<?php the_permalink() ?>">Leia mais &raquo;</a>
 			</article>
 		<?php endwhile; ?>
 	</div>

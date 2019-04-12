@@ -140,10 +140,6 @@
 	text-decoration: none;
 }
 
-.archive .post-readmore::after {
-	content: ' »';
-}
-
 /* =media */
 
 @media(max-width: 1280px) {
