@@ -2,13 +2,7 @@
 
 <div class="content">
 	<?php while(have_posts()) : the_post(); ?>
-		<article class="post">
-			<!-- <?php if(get_field('intro')): ?>
-				<div class="post-hero">
-					<?php the_field('intro'); ?>
-				</div>
-			<?php endif; ?> -->
-			
+		<article class="post">		
 			<div class="post-header">
 				<h1 class="post-title"><?php the_title(); ?></h1>
 				
