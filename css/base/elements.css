@@ -45,6 +45,10 @@ figure a, .archive .post-image-link {
     background: var(--gray-dark);
 }
 
+.mgl-tiles .mgl-row .mgl-box .mgl-item {
+	background: var(--gray-dark);
+}
+
 figure a img, .archive .post-image-link img {
     transition: all .3s;
 }

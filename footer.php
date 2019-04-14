@@ -35,19 +35,8 @@
 		<script src="<?php bloginfo('template_directory'); ?>/js/main.js"></script>
 		<script>
 			$(document).ready(function() {
-				$('.wp-block-image').lightGallery({
-					selector: 'figure a',
-					getCaptionFromTitleOrAlt: false,
-					counter: false,
-					download: false,
-					zoom: false,
-					actualSize: false,
-					fullScreen: false,
-					autoplayControls: false
-				})
-
-        		$('.wp-block-gallery').lightGallery({
-					selector: '.blocks-gallery-item figure a',
+        		$('.wp-block-image, .wp-block-gallery, .mgl-gallery').lightGallery({
+					selector: 'a',
 					getCaptionFromTitleOrAlt: false,
 					counter: false,
 					download: false,
@@ -60,20 +49,6 @@
 					preload: 3
 				})
 
-				// Get all images of post
-				// $('.post').lightGallery({
-				// 	selector: 'a[href$=".jpg"], a[href$=".png"], a[href$=".gif"]',
-				// 	getCaptionFromTitleOrAlt: false,
-				// 	counter: false,
-				// 	download: false,
-				// 	zoom: false,
-				// 	actualSize: false,
-				// 	fullScreen: false,
-				// 	autoplayControls: false,
-				// 	thumbnail:true,
-				// 	showThumbByDefault: false,
-				// 	preload: 3
-				// })				
     		})
 
 			 var swiper = new Swiper('.swiper-container', {
@@ -100,5 +75,7 @@
 			ga('create', 'UA-56519521-2', 'auto');
 			ga('send', 'pageview');
 		</script>
+
+		<?php wp_footer(); ?>
 	</body>
 </html>
