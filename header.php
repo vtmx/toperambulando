@@ -47,7 +47,6 @@
 
 	<!-- Pages -->
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/pages/archive.css">
-	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/pages/search.css">
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/pages/single.css">
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/pages/page.css">
 
