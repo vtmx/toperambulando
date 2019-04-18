@@ -15,3 +15,9 @@ SELECT post_content FROM wp_posts WHERE post_content REGEXP '\<figcaption\>\<a h
 
 http://localhost/phpmyadmin/tbl_find_replace.php?db=toperambulando&table=wp_posts
 /\<figcaption\>\<a href=".*"\>\<\/a\>/g
+
+Selecionar todas as imagens cortadas
+(.\d{3}x\d{3}.jpg)
+
+Selecionar largura 780px
+780x\d{3}.jpg
