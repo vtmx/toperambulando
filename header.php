@@ -124,7 +124,7 @@
 
 		<?php if( is_front_page() && !is_paged() ): ?>
 			<?php if( have_rows('slider', 'options') ):	?>
-				<div class="swiper-container">
+				<div class="slider swiper-container">
 					<div class="swiper-wrapper">
 						<?php 
 							while( have_rows('slider', 'options') ): the_row();
@@ -152,16 +152,5 @@
 			<?php endif; ?>
 		<?php endif; ?>
 		
-		<!-- <div class="swiper-container">
-			<div class="swiper-wrapper">
-				<div class="swiper-slide">Slide 1</div>
-				<div class="swiper-slide">Slide 2</div>
-				<div class="swiper-slide">Slide 3</div>
-			</div>
-
-			<div class="swiper-button-next"></div>
-			<div class="swiper-button-prev"></div>
-		</div> -->
-
 		<main class="main">
 			<div class="container">

@@ -51,7 +51,7 @@
 
     		})
 
-			 var swiper = new Swiper('.swiper-container', {
+			 var swiper = new Swiper('.slider', {
 				navigation: {
 					nextEl: '.swiper-button-next',
 					prevEl: '.swiper-button-prev'
@@ -59,6 +59,16 @@
 				autoplay: {
 					delay: 5000
 				},
+				speed: 800,
+				loop: true
+			})
+
+			var swiperHighlights = new Swiper('.highlights', {
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev'
+				},
+				autoplay: false,
 				speed: 800,
 				loop: true
 			})

@@ -1,8 +1,5 @@
-.swiper-container, .swiper-link {
-	display: flex;
-	align-items: center;
-	width: 100%;
-	height: 400px;
+.swiper-container {
+	position: relative;
 }
 
 .swiper-slide {
@@ -13,6 +10,13 @@
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+
+.swiper-link {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 100%;
 }
 
 .swiper-button-prev,

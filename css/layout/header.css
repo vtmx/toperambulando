@@ -420,6 +420,10 @@
 	}
 }
 
+.slider {
+	height: 400px;
+}
+
 @media(max-width: 480px) {
 	.sticky {
 		display: none;

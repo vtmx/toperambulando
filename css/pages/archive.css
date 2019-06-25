@@ -1,6 +1,12 @@
 /* =archive
 ------------------------------------------------------------------------------*/
 
+.archive .highlights {
+	max-width: 854px;
+	margin: 16px 0;
+	height: 480px;
+}
+
 .archive .posts {
 	display: flex;
 	flex-wrap: wrap;

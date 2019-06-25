@@ -1,4 +1,31 @@
 <div class="content">
+		<?php if (is_home()): ?>
+			<div class="swiper-container highlights">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<a class="swiper-link" href="#">
+							<h2 class="highlight-title">Título 1</h2>
+						</a>
+					</div>
+
+					<div class="swiper-slide">
+						<a class="swiper-link" href="#">
+							<h2 class="highlight-title">Título 2</h2>
+						</a>
+					</div>
+
+					<div class="swiper-slide">
+						<a class="swiper-link" href="#">
+							<h2 class="highlight-title">Título 3</h2>
+						</a>
+					</div>
+				</div>
+				
+				<div class="swiper-button-next swiper-button-white"></div>
+				<div class="swiper-button-prev swiper-button-white"></div>
+			</div>
+		<?php endif; ?>
+
 	<div class="posts">
 		<?php while (have_posts()) : the_post() ?>
 			<article class="post">
