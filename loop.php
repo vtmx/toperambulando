@@ -1,30 +1,34 @@
 <div class="content">
-		<?php if (is_home()): ?>
+	<?php if (is_home()): ?>
+		<?php if(have_rows('highlights', 'options')): ?>
 			<div class="swiper-container highlights">
 				<div class="swiper-wrapper">
-					<div class="swiper-slide">
-						<a class="swiper-link" href="#">
-							<h2 class="highlight-title">Título 1</h2>
-						</a>
-					</div>
 
-					<div class="swiper-slide">
-						<a class="swiper-link" href="#">
-							<h2 class="highlight-title">Título 2</h2>
-						</a>
-					</div>
+					<?php
+						while(have_rows('highlights', 'options')): the_row();
 
-					<div class="swiper-slide">
-						<a class="swiper-link" href="#">
-							<h2 class="highlight-title">Título 3</h2>
-						</a>
-					</div>
+							$highlight_image = get_sub_field('highlight_image');
+							$highlight_link = get_sub_field('highlight_link');
+							$highlight_title = get_sub_field('highlight_title');
+							$highlight_text = get_sub_field('highlight_text');
+					?>
+
+						<div class="swiper-slide" style="background-image: url(<?php echo $highlight_image; ?>)">
+							<a class="swiper-link" href="<?php echo $highlight_link; ?>">
+								<div class="highlight-content">
+									<h2 class="highlight-title"><?php echo $highlight_title; ?></h2>
+									<?php if($highlight_text): ?><p class="highlight-text"><?php echo $highlight_text; ?></p><?php endif;?>
+								</div>
+							</a>
+						</div>
+					<?php endwhile; ?>
 				</div>
 				
 				<div class="swiper-button-next swiper-button-white"></div>
 				<div class="swiper-button-prev swiper-button-white"></div>
 			</div>
 		<?php endif; ?>
+	<?php endif; ?>
 
 	<div class="posts">
 		<?php while (have_posts()) : the_post() ?>

@@ -122,12 +122,12 @@
 			</nav>
 		</header>
 
-		<?php if( is_front_page() && !is_paged() ): ?>
-			<?php if( have_rows('slider', 'options') ):	?>
+		<?php if(is_front_page() && !is_paged()): ?>
+			<?php if(have_rows('slider', 'options')): ?>
 				<div class="slider swiper-container">
 					<div class="swiper-wrapper">
 						<?php 
-							while( have_rows('slider', 'options') ): the_row();
+							while(have_rows('slider', 'options')): the_row();
 								// vars
 								$image = get_sub_field('slide-image');
 								$category = get_sub_field('slide-category');

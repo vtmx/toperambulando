@@ -7,6 +7,21 @@
 	height: 480px;
 }
 
+.archive .highlight-content {
+	position: absolute;
+	bottom: 0;
+	min-width: 100%;
+	padding: 16px 32px;
+	background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
+	color: #fff;
+}
+
+.archive .highlight-title,
+.archive .highlight-text {
+	margin: 0;
+	line-height: 1.4;
+}
+
 .archive .posts {
 	display: flex;
 	flex-wrap: wrap;
