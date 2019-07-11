@@ -22,21 +22,26 @@ if (function_exists('acf_add_options_page')) {
 	acf_add_options_page('Slider');
 }
 
-if (function_exists('acf_add_options_page')) {
-	acf_add_options_page('Destaques');
-}
-
 // Register sidebar
 // -----------------------------------------------------------------------------
 if (function_exists('register_sidebar')) {
 
-	 register_sidebar(array(
+	register_sidebar(array(
 		'id' => 'widget_header',
 		'name' => 'Anúncio Cabeçalho',
 		'before_widget' => '<div class="adsense">',
 		'after_widget' => '</div>',
 		'before_title' => '',
 		'after_title' => '',
+	));
+
+	register_sidebar(array(
+		'id' => 'highlights',
+		'name' => 'Destaques',
+		'before_widget' => '<div class="highlight">',
+		'after_widget' => '</div>',
+		'before_title' => '<h3 class="highlight-title">',
+		'after_title' => '</h3>',
 	));
 
 	 register_sidebar(array(

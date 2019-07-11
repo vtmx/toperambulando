@@ -62,16 +62,6 @@
 				speed: 800,
 				loop: true
 			})
-
-			var swiperHighlights = new Swiper('.highlights', {
-				navigation: {
-					nextEl: '.swiper-button-next',
-					prevEl: '.swiper-button-prev'
-				},
-				autoplay: false,
-				speed: 800,
-				loop: true
-			})
 		</script>
 			
 		<!-- Google Analytics -->
