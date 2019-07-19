@@ -1,13 +1,5 @@
 /* =aside */
 
-.archive .aside {
-	margin-top: 16px;
-}
-
-.single .aside {
-	margin-top: 32px;
-}
-
 .aside .widget {
 	margin-bottom: 32px;
 }
@@ -48,6 +40,15 @@
 
 .aside .widget figure {
 	margin-bottom: 8px;
+}
+
+.aside .widget select {
+	width: 100%;
+	margin-top: 16px;
+}
+
+.aside .widget [for='archives-dropdown-2'] {
+	display: none;
 }
 
 /* Plugin */

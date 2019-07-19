@@ -38,7 +38,9 @@ figure {
 	text-align: center;
 }
 
-figure a, .archive .post-image-link {
+figure a,
+.archive .post-image-link,
+.archive .highlights a {
     overflow: hidden;
     display: block;
     line-height: 0;
@@ -49,11 +51,14 @@ figure a, .archive .post-image-link {
 	background: var(--gray-dark);
 }
 
-figure a img, .archive .post-image-link img {
+figure a img, .archive .post-image-link img,
+.archive .highlights a img {
     transition: all .3s;
 }
 
-figure a:hover img, .archive .post-image-link:hover img {
+figure a:hover img,
+.archive .post-image-link:hover img,
+.archive .highlights a:hover img {
     transform: scale(1.05);
     opacity: .9;
 }
