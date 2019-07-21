@@ -195,7 +195,7 @@
 	margin: 0;
 }
 
-.archive .post-readmore:hover {
+.archive .post-readmore .button:hover {
 	background: var(--orange);
 	text-decoration: none;
 }
@@ -280,7 +280,7 @@
 
 	.archive .post-readmore {
 		position: static;
-		padding: 16px;
+		text-align: right;
 		text-transform: uppercase;
 	}
 

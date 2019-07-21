@@ -7,8 +7,6 @@
 	grid-column-gap: 32px;
 	justify-content: center;
 	max-width: 1240px;
-	margin-top: 32px;
-	padding: 0 16px;
 	animation: 1s fade-in-up;
 }
 
@@ -388,7 +386,6 @@
 }
 
 @media(max-width: 740px) {
-
 	.post-related {
 		display: none;
 	}

@@ -28,7 +28,9 @@
 					<?php the_excerpt(); ?>
 				</div>
 
-				<a class="button post-readmore" href="<?php the_permalink() ?>">Leia mais &raquo;</a>
+				<div class="post-readmore">
+					<a class="button" href="<?php the_permalink() ?>">Leia mais &raquo;</a>
+				</div>
 			</article>
 		<?php endwhile; ?>
 	</div>
