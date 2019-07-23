@@ -5,7 +5,7 @@
 }
 
 .aside .widget-title {
-	margin: 0;
+	margin: 0 0 16px;
 	padding: 16px;
 	font: bold 18px Roboto, 'Segoe UI', sans-serif;
 	text-transform: uppercase;
@@ -14,7 +14,7 @@
 }
 
 .aside .widget ul {
-	margin: 0;
+	margin: -16px 0 0;
 }
 
 .aside .widget li a {
@@ -47,22 +47,45 @@
 	margin-top: 16px;
 }
 
+.aside .special-destinations a {
+	display: block;
+	margin-bottom: 16px;
+}
+
+.aside .special-destinations img {
+	display: block;
+}
+
 .aside .widget [for='archives-dropdown-2'] {
 	display: none;
 }
 
 /* Plugin */
 
+/* Posts */
+
 .aside .wpp-list li {
-	padding: 16px 0 16px;
+	display: flex;
+	padding: 16px 0;
 	border-bottom: 1px solid var(--gray-light);
 	font-weight: bold;
 }
 
+.aside .wpp-list li:last-of-type {
+	padding-bottom: 0;
+	border-bottom: none;
+}
+
 .aside .widget .wpp-list a {
-	background: none;
+	display: block;
+	margin: 0 16px 0 0;
 	padding: 0;
+	background: none;
 	color: var(--gray-dark);
+}
+
+.aside .widget .wpp-list a:nth-of-type(2) {
+	margin-right: 0;
 }
 
 .aside .widget .wpp-list a:hover,
@@ -72,7 +95,33 @@
 }
 
 .aside .wpp-list .wpp-thumbnail {
-	margin-right: 8px;
+	margin: 0;
+}
+
+/* Wysija */
+
+.aside .widget_wysija .wysija-paragraph {
+	margin: 0 0 16px;
+}
+
+.aside .widget_wysija label {
+	margin-bottom: 8px;
+}
+
+.aside .widget_wysija br {
+	display: none;
+}
+
+.aside .wysija-paragraph .wysija-input {
+	width: 100%;
+}
+
+.aside .wysija-paragraph .formError .formErrorContent {
+	padding: 8px;
+	background: var(--gray-dark);
+	border: none;
+	font-size: 13px;
+	color: #fff;
 }
 
 /* =media

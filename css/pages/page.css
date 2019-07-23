@@ -50,21 +50,19 @@
 	margin-bottom: 8px;
 }
 
-.page .wpcf7 [type='submit']{
+.page .wpcf7 .wpcf7-text,
+.page .wpcf7 .wpcf7-textarea {
+	width: 50%;
+}
+
+.page .wpcf7 .wpcf7-submit {
 	margin: 0 8px 0 0;
 	padding: 12px 24px;
 }
 
-.page .wpcf7 [type='text'],
-.page .wpcf7 [type='email'],
-.page .wpcf7 textarea {
-	width: 50%;
-}
-
 @media(max-width: 1280px) {
-	.page .wpcf7 [type='text'],
-	.page .wpcf7 [type='email'],
-	.page .wpcf7 textarea {
+	.page .wpcf7 .wpcf7-text,
+	.page .wpcf7 .wpcf7-textarea {
 		width: 100%;
 	}
 
