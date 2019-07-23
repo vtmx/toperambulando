@@ -67,4 +67,8 @@
 	.page .wpcf7 textarea {
 		width: 100%;
 	}
+
+	.page .wpcf7 p:last-of-type {
+		text-align: right;
+	}
 }

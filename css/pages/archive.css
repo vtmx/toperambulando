@@ -72,8 +72,8 @@
 	position: relative;
 	max-width: calc(50% - 16px);
 	height: 632px;
-	padding: 18px 0 32px 0;
-	margin-bottom: 14px;
+	padding: 0 0 32px;
+	margin-bottom: 32px;
 	border-bottom: 1px solid #eee;
 }
 
