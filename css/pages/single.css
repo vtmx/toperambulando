@@ -386,6 +386,11 @@
 }
 
 @media(max-width: 740px) {
+	.post-content {
+		font: 14px/1.5 Roboto, 'Segoe UI', sans-serif;
+		text-align: justify;
+	}
+
 	.post-related {
 		display: none;
 	}
