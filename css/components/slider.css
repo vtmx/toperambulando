@@ -1,70 +1,94 @@
 .swiper-container {
-	position: relative;
+  position: relative;
 }
 
 .swiper-slide {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: #1f1f1f;
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1f1f1f;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .swiper-link {
-	display: flex;
-	align-items: center;
-	width: 100%;
-	height: 100%;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
 .swiper-button-prev,
 .swiper-button-next {
-	width: 60px !important;
-	height: 60px !important;
-	margin-top: -33px !important;
-	transition: all .1s;
+  width: 60px !important;
+  height: 60px !important;
+  margin-top: -33px !important;
+  transition: all 0.1s;
 }
 
 .swiper-button-prev {
-	left: 0 !important;
+  left: 0 !important;
 }
 
 .swiper-button-next {
-	right: 0 !important;
+  right: 0 !important;
 }
 
 .swiper-button-prev:active,
 .swiper-button-next:active {
-	transform: scale(.9);	
+  transform: scale(0.9);
 }
 
-.swiper-place, .swiper-title {
-	color: #fff;
+.swiper-place,
+.swiper-title {
+  color: #fff;
 }
 
 .swiper-text {
-	min-width: 1000px;
-	margin: 0 auto;
-	padding: 0 32px;
+  min-width: 1000px;
+  margin: 0 auto;
+  padding: 0 32px;
 }
 
 .swiper-place {
-	margin-bottom: 24px;
-	font-size: 48px;
-	font-weight: bold;
-	text-transform: uppercase;
-	line-height: 0;
-	color: var(--orange);
+  margin-bottom: 24px;
+  font-size: 48px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 0;
+  color: var(--orange);
 }
 
 .swiper-title {
-	font-size: 30px;
+  font-size: 30px;
 }
 
-@media(max-width: 720px) {
-	.swiper-container {
+@media (max-width: 720px) {
+  /* .swiper-container {
 		display: none;
-	}
+  } */
+
+  .swiper-container {
+    margin: 16px 16px 0 !important;
+  }
+
+  .swiper-link {
+    align-items: flex-end;
+  }
+
+  .swiper-text {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 16px !important;
+  }
+
+  .swiper-place {
+    font-size: 24px;
+    margin-bottom: 4px;
+    line-height: 1;
+  }
+
+  .swiper-title {
+    font-size: 16px;
+  }
 }
