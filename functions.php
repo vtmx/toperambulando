@@ -6,8 +6,10 @@ add_theme_support('html5', array('comment-list', 'comment-form', 'search-form', 
 
 // Disable Jpeg compress
 // -----------------------------------------------------------------------------
-add_filter('jpeg_quality', create_function('', 'return 100;'));
-add_filter('wp_editor_set_quality', create_function('', 'return 100;'));
+add_filter('jpeg_quality', 'jpeg_quality');
+function jpeg_quality() { return 100; };
+add_filter('wp_editor_set_quality', 'wp_editor_set_quality');
+function wp_editor_set_quality() { return 100; }
 
 // Menu
 // -----------------------------------------------------------------------------
