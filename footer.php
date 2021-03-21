@@ -15,7 +15,7 @@
 				
 				<div class="disclaimer">
 					<div class="container">
-						<div class="copyright">2006 - 2019 © Todos os direitos reservados por <a href="/">Herbert Terra</a></div>					
+						<div class="copyright">2006 - <script>document.write(new Date().getFullYear())</script> © Todos os direitos reservados por <a href="/">Herbert Terra</a></div>					
 						<div class="designer">Design por <a href="http://vitormelo.com.br/" target="_blank">Vitor Melo</a></div>
 					</div>
 				</div>
